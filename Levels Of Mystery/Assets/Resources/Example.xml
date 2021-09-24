@@ -1,0 +1,48 @@
+<ExampleTree>
+    <Node ID="101">
+        this is Choice A
+        <Address>201</Address>
+    </Node>
+    <Node ID="102" >
+        this is Choice B
+        <Address>202</Address>
+        <Reputation>+2</Reputation>
+    </Node>
+    <Node ID="103">
+        this is Choice C
+        <Address>203 204</Address>
+    </Node>
+    <Node ID="201" >
+        this is response Z
+        <Address>104 105</Address>
+    </Node>
+    <Node ID="202" >
+        this is response x
+        <Address>105 106</Address>
+    </Node>
+    <Node ID="203" >
+        this is response y
+        <Address>205, 207</Address>
+        <Threshold>3</Threshold>
+    </Node>
+    <Node ID="204"> 
+        this is response w
+        <Address>207 208</Address>
+    </Node>
+    <Node ID="104">
+        this is Choice D
+    </Node>
+    <Node ID="105">
+        this is Choice E
+    </Node>
+    <Node ID="106">
+        this is Choice F
+    </Node>
+    <Node ID="107">
+        this is Choice G
+    </Node>
+    <Node ID="108">
+        this is Choice H
+    </Node>
+</ExampleTree>
+  
