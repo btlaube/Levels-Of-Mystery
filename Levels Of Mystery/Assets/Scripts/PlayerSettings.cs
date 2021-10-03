@@ -6,17 +6,19 @@ public class PlayerSettings : MonoBehaviour
     public Toggle music;
     public Slider volume;
 
+    private int defaultVolume = 100;
+    private bool defaultMusic = true;
+
     public void Awake()
     {
         initializeMusic();
         initializeVolume();
     }
 
-
-    private void initializeMusic() {
+    public void initializeMusic() {
         if (!PlayerPrefs.HasKey("music")) {
             PlayerPrefs.SetInt("music", 1);
-            music.isOn = true;
+            music.isOn = defaultMusic;
             PlayerPrefs.Save();
         }
         else {
@@ -33,8 +35,8 @@ public class PlayerSettings : MonoBehaviour
 
     public void initializeVolume() {
         if (!PlayerPrefs.HasKey("volume")) {
-            PlayerPrefs.SetInt("volume", 100);
-            volume.value = 100;
+            PlayerPrefs.SetInt("volume", defaultVolume);
+            volume.value = defaultVolume;
             PlayerPrefs.Save();
         }
         else {
@@ -63,7 +65,7 @@ public class PlayerSettings : MonoBehaviour
         music.isOn = true;
 
         PlayerPrefs.DeleteKey("volume");
-        volume.value = 100;
+        volume.value = defaultVolume;
     }
 
 }
