@@ -12,7 +12,10 @@ public class DialogDisplay : MonoBehaviour
 
 
     void Start(){
-        textElement.text = response;
+        Debug.Log("Running");
+        Dialogue x = new Dialogue();
+        x.LoadDialogue();
+        textElement.text = x.CurrentNode.InnerText;
     }
 
     public void ChangeChoices(int choice = 0){
@@ -20,7 +23,7 @@ public class DialogDisplay : MonoBehaviour
         if (choice == 0){
             //Choices = Dialogue.GetNext()
         } else {
-            //Choices = Dialogue.GetNext(choice)
+            //Choices = Dialogue.GetNext(choice) //update choices
         }
         DisplayChoices();
     }
@@ -39,18 +42,21 @@ public class DialogDisplay : MonoBehaviour
     void Update(){
         //listens for enter/number key/ to update text box and perform necessary operations.
         int ChoiceCount = Choices.Count; //it is inneficient to count choices text each frame update.
+        Debug.Log(Choices.Count);
         if (ChoiceCount > 1){
             for(int i=1;i<=ChoiceCount;i++) {
                 if(Input.GetKeyUp((KeyCode)(48+i))){
+                    Debug.Log("you pressed a key");
                     ChangeChoices(i);
                 }
             }
         } else if (ChoiceCount == 1){
             if (Input.GetKeyUp("return")){
+                Debug.Log("you pressed a key");
                 ChangeChoices();
             }
         } else {
-            textElement.text = "end";
+            // textElement.text = "end";
         }
             
     }

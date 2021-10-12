@@ -1,4 +1,4 @@
-<ExampleTree>
+<Root>
     <Node ID="101">
         this is Choice A
         <Address>201</Address>
@@ -44,5 +44,5 @@
     <Node ID="108">
         this is Choice H
     </Node>
-</ExampleTree>
+</Root>
   
