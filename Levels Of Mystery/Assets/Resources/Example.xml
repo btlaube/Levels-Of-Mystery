@@ -1,7 +1,7 @@
 <Root>
     <Node ID="0">
-        HALLO!
-        <Address>201 202 203</Address>
+        This is a temporary starting node
+        <Address>101 102 103</Address>
     </Node>
     <Node ID="101">
         this is Choice A
