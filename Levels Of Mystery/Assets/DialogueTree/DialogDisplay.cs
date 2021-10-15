@@ -18,7 +18,6 @@ public class DialogDisplay : MonoBehaviour
         Debug.Log($"{Choices.Values}, {Choices.Keys}");
         Debug.Log(Choices.Count);
         DisplayChoices();
-        
     }
 
     public void ChangeChoices(string choice){
@@ -44,7 +43,6 @@ public class DialogDisplay : MonoBehaviour
 
     void Update(){
         //listens for enter/number key/ to update text box and perform necessary operations.
-        ChoiceCount = Choices.Count; //it  may inneficient to count choices  each frame update.
         if (ChoiceCount > 1){
             for(int i=1;i<=ChoiceCount;i++) {
                 if(Input.GetKeyUp((KeyCode)(48+i))){

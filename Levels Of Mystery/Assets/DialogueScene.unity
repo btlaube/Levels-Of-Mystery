@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.9088969, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -400,9 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f24dfc0509c53418817a7e441d0218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Choices: []
   ChoiceCount: 0
-  response: <Response>
   textElement: {fileID: 928741568}
 --- !u!1 &1998639845
 GameObject:
