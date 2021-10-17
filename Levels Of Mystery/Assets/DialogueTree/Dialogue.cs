@@ -29,7 +29,7 @@ public class Dialogue
         Dictionary<string, string> options = new Dictionary<string, string>();
         try {
             foreach (string address in CurrentNode["Address"].InnerText.Split()){
-                XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']");
+                XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']/Text");
                 options.Add(address, next.InnerText);
             }
         } catch (NullReferenceException) {Debug.Log("CurrentNode has no pointers");} //Nothing will happen where Address isnt a child element. options will intentionally return empty.
