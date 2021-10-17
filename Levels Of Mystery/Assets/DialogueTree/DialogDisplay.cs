@@ -11,13 +11,11 @@ public class DialogDisplay : MonoBehaviour
     public int ChoiceCount;
     public Text textElement;
     public Dialogue Tree = new Dialogue();
+    public string Path = "Assets\\Resources\\Example.xml"; //We will potentially have to use public variables for path, Start() can't take parameters.
 
     void Start(){
-        Tree.LoadDialogue();
-        Choices.Add(Tree.CurrentNode.Attributes["ID"].Value, Tree.CurrentNode.InnerText);
-        Debug.Log($"{Choices.Values}, {Choices.Keys}");
-        Debug.Log(Choices.Count);
-        DisplayChoices();
+        Tree.LoadDialogue(Path);
+        ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
     }
 
     public void ChangeChoices(string choice){
@@ -29,14 +27,14 @@ public class DialogDisplay : MonoBehaviour
         //formats Choices list to fit text box. (Theres probably a beter way to do this with unity, but this was what I came up with to display arbitrary amount of options)
         ChoiceCount = Choices.Count;
         textElement.text = "";
-        if (ChoiceCount > 1){ //remember to change
+        if (ChoiceCount > 1){
             int index = 1;
             foreach (string choice in Choices.Values){
                 Debug.Log(choice);
                 textElement.text += $"{index} - {choice} \n";
                 index+=1;
             }
-        } else {
+        } else if (ChoiceCount == 1) {
             textElement.text += $"{Choices.ElementAt(0).Value}";
         }
     }
@@ -61,6 +59,7 @@ public class DialogDisplay : MonoBehaviour
             }
         } else {
             textElement.text = "end";
+            //Use here later will determine what to do when the game sees the dialogue has terminated.
         }   
     }
 }

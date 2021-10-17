@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using System.Xml;
-
 using System.IO;
 
 
@@ -27,10 +27,12 @@ public class Dialogue
     public Dictionary<string, string> GetNext(string id){
         CurrentNode = Doc.SelectSingleNode($"Root/Node[@ID='{id}']");
         Dictionary<string, string> options = new Dictionary<string, string>();
-        foreach (string address in CurrentNode["Address"].InnerText.Split()){
-            XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']");
-            options.Add(address, next.InnerText);
-        }
+        try {
+            foreach (string address in CurrentNode["Address"].InnerText.Split()){
+                XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']");
+                options.Add(address, next.InnerText);
+            }
+        } catch (NullReferenceException) {Debug.Log("CurrentNode has no pointers");} //Nothing will happen where Address isnt a child element. options will intentionally return empty.
         return options;
     }
 }
