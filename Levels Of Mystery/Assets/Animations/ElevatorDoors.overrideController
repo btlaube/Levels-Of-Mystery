@@ -7,5 +7,9 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ElevatorDoors
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: e4291b31fad00ed4188aaa1392dbb59b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b09afbe1a99417c41a180edaf479b3bd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9948e00544922b34badcc101a094148a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6d228c8d672768346bc0a8f25e2e5802, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d9297a22b283ad2439be0987ec5cc0b9, type: 2}
