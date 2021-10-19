@@ -14,7 +14,12 @@ public class Player : MonoBehaviour
     }
 
     public void UpdateTime() {
-        time++;
+        if (time == 4){
+            time = 1;
+        }
+        else {
+            time++;
+        }
     }
 
     #endregion
