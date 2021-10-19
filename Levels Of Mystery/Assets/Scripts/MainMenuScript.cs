@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+
+    public GameObject settings;
+
     public void Exit() {
         Application.Quit();
     }
@@ -16,5 +19,13 @@ public class MainMenuScript : MonoBehaviour
     //public void LoadSave() {
     //    
     //}
+
+    public void ShowSettings() {
+        settings.SetActive(true);
+    }
+
+    public void HideSettings() {
+        settings.SetActive(false);
+    }
 
 }

@@ -1,11 +1,14 @@
 using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
+    public Slider SFXVolume;
+    public Slider musicVolume;
 
     public static AudioManager instance;
 
@@ -33,13 +36,29 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start(){
+        UpdateSFXVolume();
+        UpdateMusicVolume();
         Play("MainTheme");
+    }
+
+    public void UpdateSFXVolume() {
+        Sound s = Array.Find(sounds, sound => sound.name == "Click");
+        if (s == null)
+            Debug.Log("No such audio clip");
+        s.source.volume = SFXVolume.value;
+    }
+
+    public void UpdateMusicVolume() {
+        Sound s = Array.Find(sounds, sound => sound.name == "MainTheme");
+        if (s == null)
+            Debug.Log("No such audio clip");
+        s.source.volume = musicVolume.value;
     }
 
     public void Play(string name) {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
-            Debug.Log("hi");
+            Debug.Log("No such audio clip");
         s.source.Play();
     }
     
