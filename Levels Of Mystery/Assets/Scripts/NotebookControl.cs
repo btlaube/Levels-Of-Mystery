@@ -48,7 +48,7 @@ public class NotebookControl : MonoBehaviour
     }
     public void DiscriptionField()
     {
-        XmlNode people = personDataXml.SelectSingleNode($"Suspects/Person[@Id='" + i + "']");
+        XmlNode people = personDataXml.SelectSingleNode("Suspects/Person[@Id='" + i + "']");
         Text Description = GameObject.Find("Canvas/Description Text").GetComponent<Text>();
         Description.text = people.InnerText;
         /*
