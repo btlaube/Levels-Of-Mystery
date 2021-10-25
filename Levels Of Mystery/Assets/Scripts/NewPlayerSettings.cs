@@ -9,40 +9,42 @@ public class NewPlayerSettings : MonoBehaviour
     private int defaultSFXVolume = 1;
     private int defaultMusicVolume = 1;
 
-    public void Awake()
+    public AudioManager audioManager;
+
+    public void Start()
     {
         initializeMusicVolume();
-        initializeSFXVolume();
+        initializeSFXVolume();        
     }
 
     public void initializeMusicVolume() {
         if (!PlayerPrefs.HasKey("musicVolume")) {
-            PlayerPrefs.SetInt("musicVolume", defaultMusicVolume);
+            PlayerPrefs.SetFloat("musicVolume", defaultMusicVolume);
             musicVolume.value = defaultMusicVolume;
             PlayerPrefs.Save();
         }
         else {
-            SFXVolume.value = PlayerPrefs.GetInt("musicVolume");
+            musicVolume.value = PlayerPrefs.GetFloat("musicVolume");
         }
     }
 
     public void initializeSFXVolume() {
         if (!PlayerPrefs.HasKey("SFXVolume")) {
-            PlayerPrefs.SetInt("SFXVolume", defaultSFXVolume);
+            PlayerPrefs.SetFloat("SFXVolume", defaultSFXVolume);
             SFXVolume.value = defaultSFXVolume;
             PlayerPrefs.Save();
         }
         else {
-            SFXVolume.value = PlayerPrefs.GetInt("SFXVolume");
+            SFXVolume.value = PlayerPrefs.GetFloat("SFXVolume");
         }
     }
 
     public void updateMusicVolume() {
-        PlayerPrefs.SetInt("musicVolume", (int)(musicVolume.value));
+        PlayerPrefs.SetFloat("musicVolume", (float)(musicVolume.value));
     }
 
     public void updateSFXVolume() {
-        PlayerPrefs.SetInt("SFXVolume", (int)(SFXVolume.value));
+        PlayerPrefs.SetFloat("SFXVolume", (float)(SFXVolume.value));
     }
 
     //public void Reset() {

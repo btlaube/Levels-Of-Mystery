@@ -20,12 +20,4 @@ public class MainMenuScript : MonoBehaviour
     //    
     //}
 
-    public void ShowSettings() {
-        settings.SetActive(true);
-    }
-
-    public void HideSettings() {
-        settings.SetActive(false);
-    }
-
 }
