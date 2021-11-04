@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class CanvasGroupScript : MonoBehaviour
 {
-
-    public GameObject settings;
-
-    public static GameController instance;
+    public static CanvasGroupScript instance;
 
     void Awake() {
         if (instance == null) {
@@ -22,10 +19,11 @@ public class GameController : MonoBehaviour
     }
 
     public void ShowSettings() {
-        settings.SetActive(true);
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public void HideSettings() {
-        settings.SetActive(false);
+        transform.GetChild(0).gameObject.SetActive(false);
     }
+
 }

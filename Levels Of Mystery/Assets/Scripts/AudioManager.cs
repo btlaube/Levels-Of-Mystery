@@ -7,8 +7,8 @@ public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
-    public Slider SFXVolume;
-    public Slider musicVolume;
+    //public Slider SFXVolume;
+    //public Slider musicVolume;
 
     public static AudioManager instance;
 
@@ -35,30 +35,30 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start(){
-        //UpdateSFXVolume();
-        //UpdateMusicVolume();
+        UpdateSFXVolume(PlayerPrefs.GetFloat("SFXVolume"));
+        UpdateMusicVolume(PlayerPrefs.GetFloat("musicVolume"));
         Play("MainTheme");
     }
 
-    public void UpdateSFXVolume() {
+    public void UpdateSFXVolume(float value) {
         Sound s = Array.Find(sounds, sound => sound.name == "Click");
         if (s == null)
             Debug.Log("No such audio clip");
-        s.source.volume = SFXVolume.value;
+        s.source.volume = value;
     }
 
-    public void UpdateMusicVolume() {
+    public void UpdateMusicVolume(float value) {
         Sound s = Array.Find(sounds, sound => sound.name == "MainTheme");
         if (s == null)
             Debug.Log("No such audio clip");
-        s.source.volume = musicVolume.value;
+        s.source.volume = value;
     }
 
     public void Play(string name) {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
             Debug.Log("No such audio clip");
-        s.source.Play();
+        s.source.Play();        
     }
     
 }
