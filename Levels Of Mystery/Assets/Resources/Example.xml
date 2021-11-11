@@ -25,6 +25,7 @@
     <Node ID="202" Char="theotherguy">
         <Text>Nothin much, you?</Text>
         <Address>105 106</Address>
+        <Hint>This guy likes you now!</Hint>
     </Node>
     <Node ID="203" Char="theotherguy">
         <Text>...</Text>

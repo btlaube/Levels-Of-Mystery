@@ -11,9 +11,19 @@ public class DialogDisplay : MonoBehaviour
     public int ChoiceCount;
     public Text textElement;
     public Dialogue Tree = new Dialogue();
-    public string Path = "Assets\\Resources\\Example.xml"; //We will potentially have to use public variables for path, Start() can't take parameters.
+    public string Path = ""; //We will potentially have to use public variables for path, Start() can't take parameters.
+    // Assets\\Resources\\Example.xml
+    
+    //use time/date to pull from table
+    //use table to creat interpolated string path
+    //load/unload docs after termination of tree.
+    public Player player;
 
     void Start(){
+        Debug.Log(player.time);
+        if (player.time == 1){
+            Path = "Assets\\Resources\\Example.xml";
+        }
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
     }
