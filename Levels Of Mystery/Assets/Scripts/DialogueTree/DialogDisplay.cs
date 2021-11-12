@@ -20,39 +20,34 @@ public class DialogDisplay : MonoBehaviour
     public Player player;
 
     void Start(){
+        //restart scene on new tree.
         Debug.Log(player.time);
-        ////test
-        //if (player.time == 1){
-        //    Path = "Assets\\Resources\\Example.xml";
-        //} else
-        //{
-        //    Path = "Assets\\Resources\\Example2.xml";
-        //}
-        ////
-        Path = getPath();
-        Tree.LoadDialogue(Path);
-        ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
+        getPath();
     }
 
-    public string getPath() {
+    public void getPath() {
+        //demo
         Debug.Log("getPath ran");
-        if (player.day == 1) {
+        if (player.day == 1 || true) {
             Debug.Log(player.day);
             if (player.time == 1) {
                 Debug.Log(player.time);
-                return "Assets\\Resources\\Example.xml";
+                Path = "Assets\\Resources\\Example.xml";
             }
-            if (player.time == 2) {
+            else if (player.time == 2) {
                 Debug.Log(player.time);
-                return "Assets\\Resources\\example2.xml";
+                Path = "Assets\\Resources\\example2.xml";
             }
             else {
-                return "null";
+                Path = "null";
             }
         }
         else {
-            return "null";
+            Path ="null";
         }
+        Debug.Log(Path);
+        Tree.LoadDialogue(Path);
+        ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
     }
 
     public void ChangeChoices(string choice){
@@ -96,10 +91,13 @@ public class DialogDisplay : MonoBehaviour
             }
         } else {
             textElement.text = "end";
-            //Use here later will determine what to do when the game sees the dialogue has terminated.
-            //update save information
-            //do the next file ex:
-            Path = "Assets\\Resources\\Example2.xml";
+            if (Tree != null) //checks if we have progressed through at least one tree.
+            {
+                Debug.Log("tree existed");
+                player.UpdateTime();
+                getPath();
+                //Because of Update()'s properties, this will endlessly cycle through all code.
+            }
         }
     }
 }

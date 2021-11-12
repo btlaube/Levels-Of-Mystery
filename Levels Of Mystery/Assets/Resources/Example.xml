@@ -6,7 +6,7 @@
         <Address>101 102 103</Address>
     </Node>
     <Node ID="101" Char="PC">
-        <Text>'sup</Text>
+        <Text>XML1!</Text>
         <Address>201</Address>
     </Node>
     <Node ID="102" Char="PC">

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public void UpdateTime() {
         if (time == 4){
             time = 1;
+            UpdateDay();
         }
         else {
             time++;
