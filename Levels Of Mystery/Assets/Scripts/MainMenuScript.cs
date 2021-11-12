@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+
+    public GameObject settings;
+
     public void Exit() {
         Application.Quit();
     }
