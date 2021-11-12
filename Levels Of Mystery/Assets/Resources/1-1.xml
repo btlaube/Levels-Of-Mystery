@@ -1,55 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Root>
-    <Node ID="0">
-        This node will not be displayed in the tree.
-        It's only purpose is to have a list of addresses that will point to the starting choices/relevant dialogue that starts the scene.
-        This NEEDS to be the first listed node.
-        <Address>101 102 103</Address>
-    </Node>
-    <Node ID="101" Char="PC">
-        <Text>XML1!</Text>
-        <Address>201</Address>
-    </Node>
-    <Node ID="102" Char="PC">
-        <Text>Hello! hows it going?</Text>
-        <Address>202</Address>
-        <Reputation>+2</Reputation>
-    </Node>
-    <Node ID="103" Char="PC">
-        <Text>*Say Nothing*</Text>
-        <Address>203 204</Address>
-    </Node>
-    <Node ID="201" Char="theotherguy">
-        <Text>nothin much.</Text>
-        <Address>104 105</Address>
-    </Node>
-    <Node ID="202" Char="theotherguy">
-        <Text>Nothin much, you?</Text>
-        <Address>105 106</Address>
-        <Hint>This guy likes you now!</Hint>
-    </Node>
-    <Node ID="203" Char="theotherguy">
-        <Text>...</Text>
-        <Address>108, 107</Address>
-        <Threshold>3</Threshold>
-    </Node>
-    <Node ID="204" Char="theotherguy"> 
-        <Text>I guess that's how it's gonna be.</Text>
-        <Address>107</Address>
-    </Node>
-    <Node ID="104" Char="PC">
-        <Text>uh huh.</Text>
-    </Node>
-    <Node ID="105" Char="PC">
-        <Text>When the customer is happy. I'm Happy :^)</Text>
-    </Node>
-    <Node ID="106" Char="PC">
-        <Text>All good brudder.</Text>
-    </Node>
-    <Node ID="107" Char="PC">
-        <Text>Continue being weird</Text>
-    </Node>
-    <Node ID="108" Char="PC">
-        <Text>Nod your head</Text>
-    </Node>
+  <Node ID ="0">
+    Starting Node. Just points to other nodes for starting text
+    <Address>100</Address>
+  </Node>
+  <Node ID ="100" Char ="Caroline">
+    <text>Good morning. First floor, please.</text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID ="101" Char ="Steve">
+    <text>What's your name?</text>
+    <Address>102</Address>
+  </Node>
+  <Node ID ="102" Char ="Caroline">
+    <text>My name is Caroline, Caroline Hidges. Pleased to meet you!</text>
+    <Address>103 105</Address>
+  </Node>
+  <Node ID ="103" Char ="Steve">
+    <text>How old are you?</text>
+    <Address>104</Address>
+  </Node>
+  <Node ID ="104" Char ="Caroline">
+    <text>I am seventy-two as of last month, and I hope to stay around for much longer!</text>
+    <Address>105</Address>
+  </Node>
+  <Node ID ="105" Char ="Steve">
+    <text>Is there a special meaning to your name?</text>
+    <Address>106</Address>
+  </Node>
+  <Node ID ="106" Char ="Caroline">
+    <text>Actually, I was named after my own grandmother. She died many years ago.</text>
+    <Address>201</Address>
+  </Node>
+  <Node ID ="201" Char ="Steve">
+    <text>What brought you to the apartments?</text>
+    <Address>202</Address>
+  </Node>
+  <Node ID ="202" Char ="Caroline">
+    <text>I moved here with my husband many years ago. After he passed, I stayed here to be with our son. Now, I live a quiet life.</text>
+    <Address>203 205</Address>
+  </Node>
+  <Node ID ="203" Char ="Steve">
+    <text>Do you see your son often?</text>
+    <Address>204</Address>
+  </Node>
+  <Node ID ="204" Char ="Caroline">
+    <text>...I'd rather not talk about it.</text>
+    <Address>600</Address>
+  </Node>
+  <Node ID ="205" Char ="Steve">
+    <text>Do you enjoy anything in particular about living here?</text>
+    <Address>206</Address>
+  </Node>
+  <Node ID ="206" Char ="Caroline">
+    <text>Oh yes, I love the gardens! They smell so heavenly in the summer. It's such a shame that many of the plants won't survive the winter.</text>
+    <Reputation>+2</Reputation>
+    <Address>600</Address>
+  </Node>
+  <Node ID ="600" Char ="Caroline">
+    <text>I must be off. Thank you, operator!</text>
+  </Node>
 </Root>
-  
