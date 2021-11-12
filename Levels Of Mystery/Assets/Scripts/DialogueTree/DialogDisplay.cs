@@ -21,16 +21,38 @@ public class DialogDisplay : MonoBehaviour
 
     void Start(){
         Debug.Log(player.time);
-        //test
-        if (player.time == 1){
-            Path = "Assets\\Resources\\Example.xml";
-        } else
-        {
-            Path = "Assets\\Resources\\Example2.xml";
-        }
-        //
+        ////test
+        //if (player.time == 1){
+        //    Path = "Assets\\Resources\\Example.xml";
+        //} else
+        //{
+        //    Path = "Assets\\Resources\\Example2.xml";
+        //}
+        ////
+        Path = getPath();
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
+    }
+
+    public string getPath() {
+        Debug.Log("getPath ran");
+        if (player.day == 1) {
+            Debug.Log(player.day);
+            if (player.time == 1) {
+                Debug.Log(player.time);
+                return "Assets\\Resources\\Example.xml";
+            }
+            if (player.time == 2) {
+                Debug.Log(player.time);
+                return "Assets\\Resources\\example2.xml";
+            }
+            else {
+                return "null";
+            }
+        }
+        else {
+            return "null";
+        }
     }
 
     public void ChangeChoices(string choice){

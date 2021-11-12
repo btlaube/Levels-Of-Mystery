@@ -11,7 +11,7 @@ public class Dialogue
     public XmlDocument Doc = new XmlDocument();
     public XmlNode CurrentNode;
 
-    public void LoadDialogue(string path="Assets\\Resources\\Example.xml"){ //may need to be text stream
+    public void LoadDialogue(string path){ //may need to be text stream
         if (File.Exists(path)){ 
             Doc.Load(path);
             CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
