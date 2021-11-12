@@ -26,25 +26,11 @@ public class DialogDisplay : MonoBehaviour
     }
 
     public void getPath() {
-        //demo
-        Debug.Log("getPath ran");
-        if (player.day == 1 || true) {
-            Debug.Log(player.day);
-            if (player.time == 1) {
-                Debug.Log(player.time);
-                Path = "Assets\\Resources\\Example.xml";
-            }
-            else if (player.time == 2) {
-                Debug.Log(player.time);
-                Path = "Assets\\Resources\\example2.xml";
-            }
-            else {
-                Path = "null";
-            }
+        if (player.day == 10) //arbitrary
+        {
+            Tree = null; //will cause error, only for testing
         }
-        else {
-            Path ="null";
-        }
+        Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
         Debug.Log(Path);
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
