@@ -21,9 +21,14 @@ public class DialogDisplay : MonoBehaviour
 
     void Start(){
         Debug.Log(player.time);
+        //test
         if (player.time == 1){
             Path = "Assets\\Resources\\Example.xml";
+        } else
+        {
+            Path = "Assets\\Resources\\Example2.xml";
         }
+        //
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
     }
@@ -70,6 +75,9 @@ public class DialogDisplay : MonoBehaviour
         } else {
             textElement.text = "end";
             //Use here later will determine what to do when the game sees the dialogue has terminated.
-        }   
+            //update save information
+            //do the next file ex:
+            Path = "Assets\\Resources\\Example2.xml";
+        }
     }
 }
