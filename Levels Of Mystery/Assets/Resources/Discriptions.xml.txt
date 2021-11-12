@@ -1,0 +1,53 @@
+<Suspects>
+
+
+	<Person Id="0">
+
+		older woman in her 70s, is extremely nice to everyone 
+
+	</Person>
+
+	<Person Id="1">
+
+		white woman in her 30s, wealthy and upper-class
+
+	</Person>
+
+	<Person Id="2">
+
+		while he’s kind enough and a general ‘gentleman’, few would guess that there’s more to James than meets the eye. 
+
+	</Person>
+
+	<Person Id="3">
+
+		the groundskeeper of the hotel, he is a few steps below the owner on the hierarchy of control in the hotel.
+
+	</Person>
+
+	<Person Id="4">
+
+		The failson of a storied family (that kind that brags about coming over on the May Flower)
+
+	</Person>
+
+	<Person Id="5">
+
+		This traveling journalist got big by capturing the voice of the people writing Jingo-ist propaganda
+
+	</Person>
+
+	<Person Id="6">
+
+		Growing up under the despotic rule of French Algeria, in her short twenty-or-so years on this planet
+
+	</Person>
+
+	<Person Id="7">
+
+		a man in his 30s, greatly affected by his time serving in a recent war.
+
+	</Person>
+
+
+</Suspects>
