@@ -1,0 +1,55 @@
+<Root>
+    <Node ID="0">
+        This node will not be displayed in the tree.
+        It's only purpose is to have a list of addresses that will point to the starting choices/relevant dialogue that starts the scene.
+        This NEEDS to be the first listed node.
+        <Address>101 102 103</Address>
+    </Node>
+    <Node ID="101" Char="PC">
+        <Text>'sup</Text>
+        <Address>201</Address>
+    </Node>
+    <Node ID="102" Char="PC">
+        <Text>Hello! hows it going?</Text>
+        <Address>202</Address>
+        <Reputation>+2</Reputation>
+    </Node>
+    <Node ID="103" Char="PC">
+        <Text>*Say Nothing*</Text>
+        <Address>203 204</Address>
+    </Node>
+    <Node ID="201" Char="theotherguy">
+        <Text>nothin much.</Text>
+        <Address>104 105</Address>
+    </Node>
+    <Node ID="202" Char="theotherguy">
+        <Text>Nothin much, you?</Text>
+        <Address>105 106</Address>
+        <Hint>This guy likes you now!</Hint>
+    </Node>
+    <Node ID="203" Char="theotherguy">
+        <Text>...</Text>
+        <Address>108, 107</Address>
+        <Threshold>3</Threshold>
+    </Node>
+    <Node ID="204" Char="theotherguy"> 
+        <Text>I guess that's how it's gonna be.</Text>
+        <Address>107</Address>
+    </Node>
+    <Node ID="104" Char="PC">
+        <Text>uh huh.</Text>
+    </Node>
+    <Node ID="105" Char="PC">
+        <Text>When the customer is happy. I'm Happy :^)</Text>
+    </Node>
+    <Node ID="106" Char="PC">
+        <Text>All good brudder.</Text>
+    </Node>
+    <Node ID="107" Char="PC">
+        <Text>Continue being weird</Text>
+    </Node>
+    <Node ID="108" Char="PC">
+        <Text>Nod your head</Text>
+    </Node>
+</Root>
+  
