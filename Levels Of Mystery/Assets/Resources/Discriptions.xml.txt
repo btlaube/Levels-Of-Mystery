@@ -1,53 +1,51 @@
-<?xml version="1.0"?>
-
 <Suspects>
 
 
+	<Person Id="0">
+
+		older woman in her 70s, is extremely nice to everyone 
+
+	</Person>
+
 	<Person Id="1">
 
-		older woman in her 70s, is extremely nice to everyone and is generally a kind woman. She disappears once a week at 8PM and returns at 10PM with a white rose bouquet (she visits her son’s grave every week, and he died in some sort of accident). Her son’s death would be a potential motive for murder. She wears orange-scented perfume and is active during the mornings and evenings.
+		white woman in her 30s, wealthy and upper-class
 
 	</Person>
 
 	<Person Id="2">
 
-		white woman in her 30s, wealthy and upper-class, the inheritor of a large mass of land and her father’s oil industry. She is arrogant and likes to believe she’s above the “common folk” of the hotel, but her secret is that she’s not actually rich, since the oil company went bankrupt, but she doesn’t want anyone to know. No one knows that she’s poor. Perhaps murdering for money would be her motive? Either way, she will be extremely difficult to get true clues from due to her fabricated persona.
+		while he’s kind enough and a general ‘gentleman’, few would guess that there’s more to James than meets the eye. 
 
 	</Person>
 
-	<Person Id ="3">
+	<Person Id="3">
 
-		while he’s kind enough and a general ‘gentleman’, few would guess that there’s more to James than meets the eye. He’s very accustomed to keeping secrets and the formalities of public life. James is actually a member of a secret society that practices cyphers and codemaking, and he is one of the most influential members of this society. No one knows his goals for certain; he has a general mistrust of constables and the public law enforcement.
+		the groundskeeper of the hotel, he is a few steps below the owner on the hierarchy of control in the hotel.
 
 	</Person>
 
 	<Person Id="4">
 
-		the groundskeeper of the hotel, he is a few steps below the owner on the hierarchy of control in the hotel. He is generally a kind man, but he rarely shows emotion and has been weathered by the many hardships of the world. He primarily concerns himself with the hotel’s garden and the maintenance upkeep of the hotel, particularly the exterior. He enjoys card games. His daughter is the wife of the hotel owner, and he’s heard rumors that she hasn’t been happy in her marriage as of late.
+		The failson of a storied family (that kind that brags about coming over on the May Flower)
 
 	</Person>
 
 	<Person Id="5">
 
-		The failson of a storied family (that kind that brags about coming over on the May Flower), with means and a well-established social circle, Xavier has found himself bored in his twenties. As a metropolitan, he's been privy to the latest developments in economic theory and philosophy of the progressive era. With his resources and privilege he's adopted the moniker of a marxist. He's relatively limited in his purview of the world, however. He's been sheltered of course, as most born into wealth are, and so his praxis and motives are idealistic and short sighted. Those that he sympathizes with reject him, and he’s aware of this, at least on the subconscious level. This only drives him to be more unstable, as just in his shortcomings at home he's projecting outward, and continually struggles to live up to his unattainable standard of a real-man, the same standard that influenced him to reject his family and adopt his “altruistic” politics. At the least, he’s well-intentioned.
+		This traveling journalist got big by capturing the voice of the people writing Jingo-ist propaganda
 
 	</Person>
 
 	<Person Id="6">
 
-		This traveling journalist got big by capturing the voice of the people writing Jingo-ist propaganda during the Spanish-American war, but almost two decades on and a waning household name, they’ve made one-too-many unsuccessful attempts to once again dictate the American eye. She’s tried and failed to publish two novels and an autobiography of McKinley. Since her glory days she has only been demoted with her newspaper, the same one that made her feel important in the first place. She’s staying at the apartment in a temporary residence now pursuing the same folly. This time, this story, will work.
+		Growing up under the despotic rule of French Algeria, in her short twenty-or-so years on this planet
 
 	</Person>
 
 	<Person Id="7">
 
-		Growing up under the despotic rule of French Algeria, in her short twenty-or-so years on this planet she's had to endure a childhood under the oppressive thumb of French rulers. It wasn’t for nothing however, at 17 through her education she was seen fit enough to study in the continental schools of the capital, Paris. Here she would meet her future Husband, a fellow Algerian, in a segregated dormitory. In 1914, war broke out. All able-bodied men were conscripted. They married on the spot, partly from love, partly to increase the husband’s military pension. As her husband was off fighting the Germans she continued her education. This landed her at the hotel, studying abroad to complete her degree. Naively, she believes the war will really “be over by christmas.” She can’t wait.
-
-	</Person>
-
-	<Person Id="7">
-
-		a man in his 30s, greatly affected by his time serving in a recent war. While he has sustained no lasting physical injuries, he is mentally trapped in battle. His poor mental health is why he was sent home from the war. He suffers from PTSD and depression, and as such has difficulties expressing himself to the point where he’s often unaware of his surroundings or actions. He stays at the hotel because his family allowed him to temporarily stay there at first, but now he stays because they’ve all left due to the severity of his condition. He is taken care of by the staff in the hotel. He is not the best at expressing his ideas in a direct fashion, but he can use symbols or general metaphors to get his point across. He also has strong emotional reactions to things, which may help to discover clues.
+		a man in his 30s, greatly affected by his time serving in a recent war.
 
 	</Person>
 
