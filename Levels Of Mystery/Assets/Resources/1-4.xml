@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID ="0">
+    Used for start point
+  </Node>
+  <Node ID ="100" Char ="Charles">
+    <text>To the roof, if you would.</text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID ="101" Char ="Steve">
+    <text>We haven't met yet. Who are you?</text>
+    <Address>102</Address>
+  </Node>
+  <Node ID ="102" Char ="Charles">
+    <text>I'm Charles, the groundskeeper here. My daughter is Mr. Lindson's wife... er, was, I guess.</text>
+    <Address>103</Address>
+  </Node>
+  <Node ID ="103" Char ="Steve">
+    <text>What are your thoughts on Mr. Lindson's death?</text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char ="Charles">
+    <text>Boy, you may want to be a tad less blunt with your questioning. Ah well, I guess it doesn't matter either way.The man was a true entrepreneur, but I can't say he was the best husband.</text>
+    <Reputation>+2</Reputation>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char ="Steve">
+    <text>How so?</text>
+    <Address>106</Address>
+  </Node>
+  <Node ID ="106" Char ="Charles">
+    <text>My daughter told me he was quick to anger, especially with matters concerning money. He always had to be in control.</text>
+    <Address>600</Address>
+  </Node>
+  <Node ID ="201" Char ="Steve">
+    <text>Why are you going to the roof?</text>
+    <Address>202</Address>
+  </Node>
+  <Node ID ="202" Char ="Charles">
+    <text>I've gotta fix the shingles. Something's always going wrong around here.</text>
+    <Address>203</Address>
+  </Node>
+  <Node ID ="203" Char ="Steve">
+    <text>You sound frustrated.</text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char ="Charles">
+    <text>Of course I am! My son-in-law never put in a day of work in his life! He did the bare minimum and left the rest to me. Now I'm stuck with it.</text>
+    <Address>600</Address>
+  </Node>
+  <Node ID ="600" Char ="Charles">
+    <text>It's been nice chatting with ya. Have a good night.</text>
+  </Node>
+</Root>
