@@ -21,7 +21,7 @@ public class Dialogue
 
     public void changeCurrentNode(string address){
         //display the correct portrait. and whatever else with XPATH Query for attribute of char.
-        Current Doc.SelectSingleNode($"Root/Node[@ID='{address}']");
+        CurrentNode = Doc.SelectSingleNode($"Root/Node[@ID='{address}']");
     }
 
     public Dictionary<string, string> GetNext(string id){
