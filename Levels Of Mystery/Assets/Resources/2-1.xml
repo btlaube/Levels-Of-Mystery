@@ -26,7 +26,7 @@
   </Node>
   <Node ID="105" Char="Lucy">
     <Text>All the time! I had to be up super early for classes at home. Now, the school hours are just part of my routine.</Text>
-    <Address>201 301</Address>
+    <Address>201 301 600</Address>
   </Node>
   <Node ID="201" Char="Steve">
     <Text>Do you know anyone else here?</Text>
@@ -34,7 +34,7 @@
   </Node>
   <Node ID="202" Char="Lucy">
     <Text>Yes, I know Thomas! He's not always the best at conversation, but he's very nice once you get to know him!</Text>
-    <Address>102 301</Address>
+    <Address>102 301 600</Address>
   </Node>
   <Node ID="301" Char="Steve">
     <Text>Did you know Mr. Lindson?</Text>
@@ -50,6 +50,9 @@
   </Node>
   <Node ID="304" Char="Lucy">
     <Text>...It was just a suicide, right?</Text>
-    <Address>102 201</Address>
+    <Address>102 201 600</Address>
+  </Node>
+  <Node ID="600" Char="Lucy">
+    <Text>It was nice meeting you! Have a great day!</Text>
   </Node>
 </Root>
