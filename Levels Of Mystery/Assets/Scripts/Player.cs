@@ -7,7 +7,22 @@ public class Player : MonoBehaviour
     public int day = 1;
     public int time = 1;
 
+    public static Player instance;
+
     #region UI Methods
+
+    void Awake() {
+
+        if (instance == null) {
+            instance = this;
+        }
+        else {
+            Destroy(gameObject);
+            return;
+        }
+        
+        DontDestroyOnLoad(gameObject);
+    }
 
     public void UpdateDay() {
         day++;
