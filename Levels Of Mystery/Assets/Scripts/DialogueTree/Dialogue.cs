@@ -27,10 +27,21 @@ public class Dialogue
     public void changeCurrentNode(string id)
     {
         CurrentNode = Doc.SelectSingleNode($"Root/Node[@ID='{id}']");
-
         updateCharacter();
-    
-    
+        findHint();
+    }
+
+    private void findHint()
+    {
+        if (CurrentNode["Hint"]?.InnerText != null)
+        {
+            string hint = CurrentNode["Hint"].InnerText;
+            Debug.Log(hint);
+        }
+        else
+        {
+            Debug.Log("no hint found");
+        }
     }
 
     private void updateCharacter()
