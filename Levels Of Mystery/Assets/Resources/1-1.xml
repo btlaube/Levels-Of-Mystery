@@ -1,63 +1,63 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿
 <Root>
-  <Node ID ="0">
+  <Node ID="0">
     Starting Node. Just points to other nodes for starting text
     <Address>100</Address>
   </Node>
-  <Node ID ="100" Char ="Caroline">
-    <text>Good morning. First floor, please.</text>
+  <Node ID="100" Char="Caroline">
+    <Text>Good morning. First floor, please.</Text>
     <Address>101 201</Address>
   </Node>
-  <Node ID ="101" Char ="Steve">
-    <text>What's your name?</text>
+  <Node ID="101" Char="Steve">
+    <Text>What's your name?</Text>
     <Address>102</Address>
   </Node>
-  <Node ID ="102" Char ="Caroline">
-    <text>My name is Caroline, Caroline Hidges. Pleased to meet you!</text>
+  <Node ID="102" Char="Caroline">
+    <Text>My name is Caroline, Caroline Hidges. Pleased to meet you!</Text>
     <Address>103 105</Address>
   </Node>
-  <Node ID ="103" Char ="Steve">
-    <text>How old are you?</text>
+  <Node ID="103" Char="Steve">
+    <Text>How old are you?</Text>
     <Address>104</Address>
   </Node>
-  <Node ID ="104" Char ="Caroline">
-    <text>I am seventy-two as of last month, and I hope to stay around for much longer!</text>
+  <Node ID="104" Char="Caroline">
+    <Text>I am seventy-two as of last month, and I hope to stay around for much longer!</Text>
     <Address>105</Address>
   </Node>
-  <Node ID ="105" Char ="Steve">
-    <text>Is there a special meaning to your name?</text>
+  <Node ID="105" Char="Steve">
+    <Text>Is there a special meaning to your name?</Text>
     <Address>106</Address>
   </Node>
-  <Node ID ="106" Char ="Caroline">
-    <text>Actually, I was named after my own grandmother. She died many years ago.</text>
+  <Node ID="106" Char="Caroline">
+    <Text>Actually, I was named after my own grandmother. She died many years ago.</Text>
     <Address>201</Address>
   </Node>
-  <Node ID ="201" Char ="Steve">
-    <text>What brought you to the apartments?</text>
+  <Node ID="201" Char="Steve">
+    <Text>What brought you to the apartments?</Text>
     <Address>202</Address>
   </Node>
-  <Node ID ="202" Char ="Caroline">
-    <text>I moved here with my husband many years ago. After he passed, I stayed here to be with our son. Now, I live a quiet life.</text>
+  <Node ID="202" Char="Caroline">
+    <Text>I moved here with my husband many years ago. After he passed, I stayed here to be with our son. Now, I live a quiet life.</Text>
     <Address>203 205</Address>
   </Node>
-  <Node ID ="203" Char ="Steve">
-    <text>Do you see your son often?</text>
+  <Node ID="203" Char="Steve">
+    <Text>Do you see your son often?</Text>
     <Address>204</Address>
   </Node>
-  <Node ID ="204" Char ="Caroline">
-    <text>...I'd rather not talk about it.</text>
+  <Node ID="204" Char="Caroline">
+    <Text>...I'd rather not talk about it.</Text>
     <Address>600</Address>
   </Node>
-  <Node ID ="205" Char ="Steve">
-    <text>Do you enjoy anything in particular about living here?</text>
+  <Node ID="205" Char="Steve">
+    <Text>Do you enjoy anything in particular about living here?</Text>
     <Address>206</Address>
   </Node>
-  <Node ID ="206" Char ="Caroline">
-    <text>Oh yes, I love the gardens! They smell so heavenly in the summer. It's such a shame that many of the plants won't survive the winter.</text>
+  <Node ID="206" Char="Caroline">
+    <Text>Oh yes, I love the gardens! They smell so heavenly in the summer. It's such a shame that many of the plants won't survive the winter.</Text>
     <Reputation>+2</Reputation>
     <Address>600</Address>
   </Node>
-  <Node ID ="600" Char ="Caroline">
-    <text>I must be off. Thank you, operator!</text>
+  <Node ID="600" Char="Caroline">
+    <Text>I must be off. Thank you, operator!</Text>
   </Node>
 </Root>

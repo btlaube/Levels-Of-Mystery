@@ -11,12 +11,8 @@ public class DialogDisplay : MonoBehaviour
     public int ChoiceCount;
     public Text textElement;
     public Dialogue Tree = new Dialogue();
-    public string Path = ""; //We will potentially have to use public variables for path, Start() can't take parameters.
-    // Assets\\Resources\\Example.xml
-    
-    //use time/date to pull from table
-    //use table to creat interpolated string path
-    //load/unload docs after termination of tree.
+    public string Path = "";
+  
     public Player player;
 
     void Start(){
@@ -62,17 +58,13 @@ public class DialogDisplay : MonoBehaviour
         if (ChoiceCount > 1){
             for(int i=1;i<=ChoiceCount;i++) {
                 if(Input.GetKeyUp((KeyCode)(48+i))){
-                    Debug.Log($"you pressed {i}");
                     string id = Choices.ElementAt(i-1).Key;
-                    Debug.Log($"chosen id is : {id}");
                     ChangeChoices(id);
                 }
             }
         } else if (ChoiceCount == 1){
             if (Input.GetKeyUp("return")){
-                Debug.Log("you pressed return");
                 string id = Choices.ElementAt(0).Key;
-                Debug.Log($"chosen id is : {id}");
                 ChangeChoices(id);
             }
         } else {

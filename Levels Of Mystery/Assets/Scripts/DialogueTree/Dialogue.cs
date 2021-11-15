@@ -12,11 +12,13 @@ public class Dialogue
     public XmlNode CurrentNode;
 
     public void LoadDialogue(string path){ //may need to be text stream
+        Debug.Log($"Loading File: {path}");
         if (File.Exists(path)){ 
+            Debug.Log($"File: {path} existed");
             Doc.Load(path);
             CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
-            
         }
+        else {Debug.Log($"File: {path} was not found");}
     }
 
     public void changeCurrentNode(string address){
