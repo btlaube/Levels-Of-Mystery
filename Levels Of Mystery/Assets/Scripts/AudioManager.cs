@@ -7,8 +7,6 @@ public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
-    //public Slider SFXVolume;
-    //public Slider musicVolume;
 
     public static AudioManager instance;
 
