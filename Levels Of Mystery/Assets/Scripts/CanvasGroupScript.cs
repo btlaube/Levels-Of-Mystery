@@ -54,4 +54,12 @@ public class CanvasGroupScript : MonoBehaviour
         transform.GetChild(3).gameObject.SetActive(false);
     }
 
+    public void ShowNotebook() {
+        transform.GetChild(4).gameObject.SetActive(true);
+    }
+
+    public void HideNotebook() {
+        transform.GetChild(4).gameObject.SetActive(false);
+    }
+
 }
