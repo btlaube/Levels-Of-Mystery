@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 706222774}
   - component: {fileID: 706222773}
   m_Layer: 0
-  m_Name: Caroline
+  m_Name: NPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,6 +504,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 182
       objectReference: {fileID: 0}
+    - target: {fileID: 4941692816624047408, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 706222773}
     - target: {fileID: 4941692816624047408, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: player
       value: 
@@ -882,11 +886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2213374277445615825, guid: 0c9131ec0bfce5e458073fc12ec06781, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 829.47217
+      value: -5.12
       objectReference: {fileID: 0}
     - target: {fileID: 2213374277445615825, guid: 0c9131ec0bfce5e458073fc12ec06781, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 466.82367
+      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 2213374277445615825, guid: 0c9131ec0bfce5e458073fc12ec06781, type: 3}
       propertyPath: m_LocalPosition.z
