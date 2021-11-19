@@ -10,15 +10,17 @@ public class DialogDisplay : MonoBehaviour
     public Dictionary<string, string> Choices = new Dictionary<string, string>();
     public int ChoiceCount;
     public Text textElement;
+    public Text nameTag;
     public Dialogue Tree = new Dialogue();
     public string Path = "";
 
     public Player player;
+    public SpriteRenderer npc; 
 
     void Start()
     {
         //restart scene on new tree.
-        Debug.Log(player.time);
+        //Debug.Log(player.time);
         getPath();
     }
 
@@ -45,6 +47,8 @@ public class DialogDisplay : MonoBehaviour
         //formats Choices list to fit text box. (Theres probably a beter way to do this with unity, but this was what I came up with to display arbitrary amount of options)
         ChoiceCount = Choices.Count;
         textElement.text = "";
+        nameTag.text = Tree.Character;
+        npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
         if (ChoiceCount > 1)
         {
             int index = 1;
@@ -90,6 +94,7 @@ public class DialogDisplay : MonoBehaviour
             {
                 Debug.Log("tree existed");
                 player.UpdateTime();
+                player.SavePlayer();
                 getPath();
                 //Because of Update()'s properties, this will endlessly cycle through all code.
             }

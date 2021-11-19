@@ -10,6 +10,7 @@
   </Node>
   <Node ID="101" Char="Steve">
     <Text>What's your name?</Text>
+    </ShowOnce>
     <Address>102</Address>
   </Node>
   <Node ID="102" Char="Caroline">
@@ -18,22 +19,26 @@
   </Node>
   <Node ID="103" Char="Steve">
     <Text>How old are you?</Text>
+    </ShowOnce>
     <Address>104</Address>
   </Node>
   <Node ID="104" Char="Caroline">
     <Text>I am seventy-two as of last month, and I hope to stay around for much longer!</Text>
-    <Address>105</Address>
+    <Address>105 201 600</Address>
   </Node>
   <Node ID="105" Char="Steve">
     <Text>Is there a special meaning to your name?</Text>
+    </ShowOnce>
     <Address>106</Address>
   </Node>
   <Node ID="106" Char="Caroline">
     <Text>Actually, I was named after my own grandmother. She died many years ago.</Text>
-    <Address>201</Address>
+    </ShowOnce>
+    <Address>201 103 600</Address>
   </Node>
   <Node ID="201" Char="Steve">
     <Text>What brought you to the apartments?</Text>
+    </ShowOnce>
     <Address>202</Address>
   </Node>
   <Node ID="202" Char="Caroline">
@@ -42,6 +47,7 @@
   </Node>
   <Node ID="203" Char="Steve">
     <Text>Do you see your son often?</Text>
+    </ShowOnce>
     <Address>204</Address>
   </Node>
   <Node ID="204" Char="Caroline">
@@ -57,7 +63,11 @@
     <Reputation>+2</Reputation>
     <Address>600</Address>
   </Node>
-  <Node ID="600" Char="Caroline">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
     <Text>I must be off. Thank you, operator!</Text>
   </Node>
 </Root>
