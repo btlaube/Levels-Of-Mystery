@@ -8,7 +8,7 @@
     <Text>Good morning. First floor, please.</Text>
     <Address>101 201</Address>
   </Node>
-  <Node ID="101" Char="Steve">
+  <Node ID="101" Char="Steve" ShowOnce=True>
     <Text>What's your name?</Text>
     <Address>102</Address>
   </Node>
@@ -16,23 +16,23 @@
     <Text>My name is Caroline, Caroline Hidges. Pleased to meet you!</Text>
     <Address>103 105</Address>
   </Node>
-  <Node ID="103" Char="Steve">
+  <Node ID="103" Char="Steve" ShowOnce=True>
     <Text>How old are you?</Text>
     <Address>104</Address>
   </Node>
   <Node ID="104" Char="Caroline">
     <Text>I am seventy-two as of last month, and I hope to stay around for much longer!</Text>
-    <Address>105</Address>
+    <Address>105 201 600</Address>
   </Node>
-  <Node ID="105" Char="Steve">
+  <Node ID="105" Char="Steve" ShowOnce=True>
     <Text>Is there a special meaning to your name?</Text>
     <Address>106</Address>
   </Node>
-  <Node ID="106" Char="Caroline">
+  <Node ID="106" Char="Caroline" ShowOnce=True>
     <Text>Actually, I was named after my own grandmother. She died many years ago.</Text>
-    <Address>201</Address>
+    <Address>201 103 600</Address>
   </Node>
-  <Node ID="201" Char="Steve">
+  <Node ID="201" Char="Steve" ShowOnce=True>
     <Text>What brought you to the apartments?</Text>
     <Address>202</Address>
   </Node>
@@ -40,7 +40,7 @@
     <Text>I moved here with my husband many years ago. After he passed, I stayed here to be with our son. Now, I live a quiet life.</Text>
     <Address>203 205</Address>
   </Node>
-  <Node ID="203" Char="Steve">
+  <Node ID="203" Char="Steve" ShowOnce=True>
     <Text>Do you see your son often?</Text>
     <Address>204</Address>
   </Node>
@@ -57,7 +57,11 @@
     <Reputation>+2</Reputation>
     <Address>600</Address>
   </Node>
-  <Node ID="600" Char="Caroline">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
     <Text>I must be off. Thank you, operator!</Text>
   </Node>
 </Root>

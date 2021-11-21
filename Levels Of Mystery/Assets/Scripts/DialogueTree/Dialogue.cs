@@ -11,6 +11,7 @@ public class Dialogue
     public XmlDocument Doc = new XmlDocument();
     public XmlNode CurrentNode;
     public string Character = "None";
+    public string CharacterPNGPath = "None";
 
     public void LoadDialogue(string path)
     {
@@ -27,7 +28,7 @@ public class Dialogue
     public void changeCurrentNode(string id)
     {
         CurrentNode = Doc.SelectSingleNode($"Root/Node[@ID='{id}']");
-        updateCharacter();
+        //updateCharacter();
         findHint();
     }
 
@@ -44,12 +45,21 @@ public class Dialogue
         }
     }
 
-    private void updateCharacter()
+    private void updateCharacter(XmlNode node)
     {
+        Debug.Log("update character called");
+        if (node != null) {
+            Debug.Log("node is not null");
+        }
+        else {
+            Debug.Log("node is null");
+        }
+        //Debug.Log(node.Attributes["ID"].Value);
+        Debug.Log(node.Attributes["ID"].Value);
         try
         {
-            if (Character == CurrentNode.Attributes["Char"].Value) { return; }
-            Character = CurrentNode.Attributes["Char"].Value;
+            if (Character == node.Attributes["Char"].Value) { return; }
+            Character = node.Attributes["Char"].Value;
             Debug.Log($"char name: {Character}");
         }
         catch (NullReferenceException) { Debug.Log("character not found"); }
@@ -57,10 +67,12 @@ public class Dialogue
         switch (Character)
         {
             case "Player Character":
-                Debug.Log("No character.");
                 break;
             case "Caroline":
-                Debug.Log("No character.");
+                CharacterPNGPath = "CharacterSprites\\oldLadyColor";
+                break;
+            case "Charles":
+                CharacterPNGPath = "CharacterSprites\\CharlesTemp";
                 break;
             default:
                 Debug.Log("No character. Found Speaking.");
@@ -77,6 +89,7 @@ public class Dialogue
             foreach (string address in CurrentNode["Address"].InnerText.Split())
             {
                 XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']/Text");
+                updateCharacter(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
                 options.Add(address, next.InnerText);
             }
         }
