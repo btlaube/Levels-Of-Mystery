@@ -69,7 +69,7 @@ public class Dialogue
             case "Player Character":
                 break;
             case "Caroline":
-                CharacterPNGPath = "CharacterSprites\\oldLadyColor";
+                CharacterPNGPath = "CharacterSprites\\Caroline";
                 break;
             case "Charles":
                 CharacterPNGPath = "CharacterSprites\\CharlesTemp";
