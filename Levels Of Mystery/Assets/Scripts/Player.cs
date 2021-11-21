@@ -9,8 +9,6 @@ public class Player : MonoBehaviour
 
     public static Player instance;
 
-    #region UI Methods
-
     void Awake() {
 
         if (instance == null) {
@@ -23,6 +21,8 @@ public class Player : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
     }
+
+    #region UI Methods
 
     public void UpdateDay() {
         day++;
