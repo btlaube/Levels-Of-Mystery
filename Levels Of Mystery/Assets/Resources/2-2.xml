@@ -16,7 +16,7 @@
     <Text>...six.</Text>
     <Address>103 201</Address>
   </Node>
-  <Node ID="103" Char="Steve" ShowOnce=True>
+  <Node ID="103" Char="Steve" ShowOnce="True">
     <Text>Where are you from?</Text>
     <Address>104</Address>
   </Node>
@@ -32,7 +32,7 @@
     <Text>It's fine. Just forget about it.</Text>
     <Address>103 201 600</Address>
   </Node>
-  <Node ID="201" Char="Steve" ShowOnce=True>
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>What's your name?</Text>
     <Address>202</Address>
   </Node>
