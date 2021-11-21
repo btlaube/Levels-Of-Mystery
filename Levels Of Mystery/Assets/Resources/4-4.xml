@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Charles">
+    <Text>Hello again, sir. I'm headed to the basement.</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>Have you seen anything strange recently?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Charles">
+    <Text>I have my theories... but there's nothing concrete yet. I'll let you know if I find any evidence.</Text>
+    <Reputation>+1</Reputation>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>What did you do today?</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Charles">
+    <Text>I did all sorts of things, namely removing snow from the sidewalks. 'Course, it's about to snow again soon, so I guess it doesn't matter much, heh. I also saw James earlier, and he seemed mighty busy.</Text>
+    <Address>203 600</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>Did he say anything to you?</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Charles">
+    <Text>No, in fact, he just rushed right past me. Nowadays, every man has some sort of urgent business, so I didn't think much of it.</Text>
+    <Address>600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Charles">
+    <Text>Much appreciative of the ride, sir. Take 'er easy!</Text>
+  </Node>
+</Root>
