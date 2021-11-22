@@ -8,7 +8,7 @@
     <Text>Floor six, please! I'm taking Thomas back to his room.</Text>
     <Address>101 201</Address>
   </Node>
-  <Node ID="101" Char="Steve" ShowOnce=True>
+  <Node ID="101" Char="Steve" ShowOnce="True">
     <Text>Thomas, how are you?</Text>
     <Address>102</Address>
   </Node>
@@ -28,7 +28,7 @@
     <Text>...Oh...sorry, let's change the subject.</Text>
     <Address>201 600</Address>
   </Node>
-  <Node ID="201" Char="Steve" ShowOnce=True>
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>Lucy, what have you done today?</Text>
     <Address>202</Address>
   </Node>

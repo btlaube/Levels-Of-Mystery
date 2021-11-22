@@ -12,7 +12,7 @@
     <Text>Oh, what a shame! I just remembered that I ran out of my orange blossom perfume today. I'll have to buy more this week.</Text>
     <Address>102 201 301</Address>
   </Node>
-  <Node ID="102" Char="Steve" ShowOnce=True>
+  <Node ID="102" Char="Steve" ShowOnce="True">
     <Text>Orange blossom perfume?</Text>
     <Address>103</Address>
   </Node>
@@ -20,7 +20,7 @@
     <Text>Yes, dear. I was wearing it when I first met my husband.</Text>
     <Address>104 201 301</Address>
   </Node>
-  <Node ID="104" Char="Steve" ShowOnce=True>
+  <Node ID="104" Char="Steve" ShowOnce="True">
     <Text>What happened to your husband?</Text>
     <Address>105 106</Address>
   </Node>
