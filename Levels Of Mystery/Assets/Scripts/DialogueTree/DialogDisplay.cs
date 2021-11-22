@@ -11,11 +11,13 @@ public class DialogDisplay : MonoBehaviour
     public int ChoiceCount;
     public Text textElement;
     public Text nameTag;
+    public Text control;
     public Dialogue Tree = new Dialogue();
     public string Path = "";
 
     public Player player;
-    public SpriteRenderer npc; 
+    //public SpriteRenderer npc;
+    public Image image; 
 
     void Start()
     {
@@ -48,7 +50,15 @@ public class DialogDisplay : MonoBehaviour
         ChoiceCount = Choices.Count;
         textElement.text = "";
         nameTag.text = Tree.Character;
-        npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
+        if (Tree.Character == "Steve") {
+            control.text = "Number Keys";
+        }
+        else {
+            control.text = "↓ Enter";
+        }
+        //npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
+        image.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);
+        //image.SetNativeSize();
         if (ChoiceCount > 1)
         {
             int index = 1;
