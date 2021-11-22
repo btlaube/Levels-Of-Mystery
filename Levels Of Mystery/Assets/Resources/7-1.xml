@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Caroline">
+    <Text>G-good moring, Steve. I-I'm heading to the f-first floor.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>Are you alright?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Caroline">
+    <Text>W-Why, y-yes, of course! I'm j-just a bit shaken u-up... I'd like t-to change the s-subject, please. </Text>
+    <Address>103 201</Address>
+  </Node>
+  <Node ID="103" Char="Steve" ShowOnce="True">
+    <Text>What scared you?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Caroline">
+    <Text>I s-said I'm fine, d-dear. Let's l-leave it at t-that</Text>
+    <Reputation>-2</Reputation>
+    <Address>601</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>What will you do today?</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Caroline">
+    <Text>I'll try t-to get in a walk t-through the gardens. Th-that should help.</Text>
+    <Address>203 600</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>Did you notice anything strange on the night of Charles's death?</Text>
+    <Address>204 600</Address>
+  </Node>
+  <Node ID="204" Char="Caroline">
+    <Text>N-no, not p-particularly. I-I think I... n-n-no. Th-there was nothing.</Text>
+    <Hint>Her stutter got a bit worse after hearing that question.</Hint>
+    <Address>600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
+    <Text>Good day, operator.</Text>
+  </Node>
+</Root>
