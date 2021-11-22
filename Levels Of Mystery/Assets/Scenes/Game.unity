@@ -231,6 +231,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &423238901 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5480208128693914450, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+  m_PrefabInstance: {fileID: 788229991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &471848821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,6 +312,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1202fa7c0d68c14083461f289aa1f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &473916516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2304756081278799963, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+  m_PrefabInstance: {fileID: 788229991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &473916519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473916516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1fc0fc3c65c884b89b62b0b749ecea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
 --- !u!1 &706222772
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1481480039675879002, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e69ae8b7c1189b46a61e85a3bc8395f, type: 3}
     - target: {fileID: 2304756080213087966, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_Name
       value: MainMenuCanvas
@@ -484,6 +511,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 473916519}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonLast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4777533574044299060, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_Color.b
       value: 0.09411766
@@ -516,9 +567,41 @@ PrefabInstance:
       propertyPath: nameTag
       value: 
       objectReference: {fileID: 834632789}
+    - target: {fileID: 5606176604982850139, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -180.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606176604982850139, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65.857
+      objectReference: {fileID: 0}
     - target: {fileID: 5775641886085607670, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 473916519}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonNext
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NotebookControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6443105922285409130, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -724,6 +807,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b8916f094792f45bbd1a260362b0a6, type: 3}
+--- !u!1 &1452793238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452793239}
+  - component: {fileID: 1452793240}
+  m_Layer: 5
+  m_Name: Notebook Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1452793239
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452793238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 423238901}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1452793240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452793238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1fc0fc3c65c884b89b62b0b749ecea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
 --- !u!1 &1771665545
 GameObject:
   m_ObjectHideFlags: 0
