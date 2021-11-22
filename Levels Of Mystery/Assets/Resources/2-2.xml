@@ -16,7 +16,7 @@
     <Text>...six.</Text>
     <Address>103 201</Address>
   </Node>
-  <Node ID="103" Char="Steve">
+  <Node ID="103" Char="Steve" ShowOnce="True">
     <Text>Where are you from?</Text>
     <Address>104</Address>
   </Node>
@@ -30,9 +30,9 @@
   </Node>
   <Node ID="106" Char="Thomas">
     <Text>It's fine. Just forget about it.</Text>
-    <Address>201 600</Address>
+    <Address>103 201 600</Address>
   </Node>
-  <Node ID="201" Char="Steve">
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>What's your name?</Text>
     <Address>202</Address>
   </Node>
@@ -65,7 +65,11 @@
     <Text>...I was. I don't like to think about it much anymore.</Text>
     <Address>103 600</Address>
   </Node>
-  <Node ID="600" Char="Thomas">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Thomas">
     <Text>This is my floor. Bye.</Text>
   </Node>
 </Root>

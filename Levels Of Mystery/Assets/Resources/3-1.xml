@@ -8,7 +8,7 @@
     <Text>Good morning! Second floor, please.</Text>
     <Address>101 201</Address>
   </Node>
-  <Node ID="101" Char="Steve">
+  <Node ID="101" Char="Steve" ShowOnce="True">
     <Text>What was your opinion of Mr. Lindson?</Text>
     <Address>102</Address>
   </Node>
@@ -16,7 +16,7 @@
     <Text>He was a very nice man. A bit eccentric, of course, but I suppose that rarely harms anybody.</Text>
     <Address>103 105</Address>
   </Node>
-  <Node ID="103" Char="Steve">
+  <Node ID="103" Char="Steve" ShowOnce="True">
     <Text>Do you suspect foul play?</Text>
     <Address>104</Address>
   </Node>
@@ -24,7 +24,7 @@
     <Text>Frankly, I don't like to engage in gossip dear. But yes, I do.</Text>
     <Address>105 201 600</Address>
   </Node>
-  <Node ID="105" Char="Steve">
+  <Node ID="105" Char="Steve" ShowOnce="True">
     <Text>You knew him well, then?</Text>
     <Address>106</Address>
   </Node>
@@ -32,7 +32,7 @@
     <Text>I saw him every now and then, but that's it. My heart goes out to his wife</Text>
     <Address>103 201 600</Address>
   </Node>
-  <Node ID="201" Char="Steve">
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>What are you doing today?</Text>
     <Address>202</Address>
   </Node>
@@ -47,7 +47,7 @@
   <Node ID="204" Char="Caroline">
     <Text>Premature judgment never did any good for anyone, dear.</Text>
     <Reputation>-2</Reputation>
-    <Address>205 600 101</Address>
+    <Address>101 205 600</Address>
   </Node>
   <Node ID="205" Char="Steve">
     <Text>Have you noticed anything strange recently?</Text>
@@ -55,9 +55,13 @@
   </Node>
   <Node ID="206" Char="Caroline">
     <Text>Oh, just the occasional shadow, but nothing too extreme. That James fellow gives me the creeps, though.</Text>
-    <Address>203 600 101</Address>
+    <Address>101 600</Address>
   </Node>
-  <Node ID="600" Char="Caroline">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
     <Text>Thank you for the ride. Stay warm, dear!</Text>
   </Node>
 </Root>

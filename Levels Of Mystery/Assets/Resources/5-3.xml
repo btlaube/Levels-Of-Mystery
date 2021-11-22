@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Lucy">
+    <Text>Hello! To the lobby, please!</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Lucy">
+    <Text>Thomas gave me a bouquet of flowers this morning. Isn't he so sweet?</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Steve" ShowOnce="True">
+    <Text>You talk about Thomas very often...</Text>
+    <Address>103 104</Address>
+  </Node>
+  <Node ID="103" Char="Lucy">
+    <Text>Yeah, I guess so. Why does that matter?</Text>
+    <Reputation>-1</Reputation>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="104" Char="Lucy">
+    <Text>Yeah, well, he reminds me of someone. I don't think he has many people to support him, that's why he's here by himself.</Text>
+    <Address>105 201 600</Address>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>Who does he remind you of?</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Lucy">
+    <Text>Just... someone from far away. It was a long time ago, so it doesn't matter anymore.</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>You have a slight accent. Where is it from?</Text>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="202" Char="Lucy">
+    <Text>That's none of your concern.</Text>
+    <Address>102 600</Address>
+  </Node>
+  <Node ID="203" Char="Lucy">
+    <Text>Oh no, is it that noticeable? I'm just teasing! I'm actually from Algeria, and French is my first language. I only speak English here, though.</Text>
+    <Address>102 204 600</Address>
+    <Threshold>5</Threshold>
+  </Node>
+  <Node ID="204" Char="Steve">
+    <Text>It's very far for you to be studying here. It must be difficult.</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Lucy">
+    <Text>Sometimes it is. My parents wanted the best for me, and there weren't many opportunities back home. Here, I'm following my dreams!</Text>
+    <Reputation>+2</Reputation>
+    <Address>206</Address>
+  </Node>
+  <Node ID="206" Char="Lucy">
+    <Text>And, to be completely honest, I like it better here, too. There are some things at home that I don't want to face again.</Text>
+    <Address>102 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601 602</Address>
+  </Node>
+  <Node ID="601" Char="Lucy">
+    <Text>Have a good evening, sir! I'll see you later!</Text>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="602" Char="Lucy">
+    <Text>Thank you, have a good evening.</Text>
+  </Node>
+</Root>

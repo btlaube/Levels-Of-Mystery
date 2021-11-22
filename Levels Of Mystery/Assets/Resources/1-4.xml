@@ -7,7 +7,7 @@
     <Text>To the roof, if you would.</Text>
     <Address>101 201</Address>
   </Node>
-  <Node ID="101" Char="Steve">
+  <Node ID="101" Char="Steve" ShowOnce="True">
     <Text>We haven't met yet. Who are you?</Text>
     <Address>102</Address>
   </Node>
@@ -30,9 +30,9 @@
   </Node>
   <Node ID="106" Char="Charles">
     <Text>My daughter told me he was quick to anger, especially with matters concerning money. He always had to be in control.</Text>
-    <Address>600</Address>
+    <Address>600 201</Address>
   </Node>
-  <Node ID="201" Char="Steve">
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>Why are you going to the roof?</Text>
     <Address>202</Address>
   </Node>
@@ -44,11 +44,15 @@
     <Text>You sound frustrated.</Text>
     <Address>204</Address>
   </Node>
-  <Node ID="204" Char="Charles">
+  <Node ID="204" Char="Charles" ShowOnce="True">
     <Text>Of course I am! My son-in-law never put in a day of work in his life! He did the bare minimum and left the rest to me. Now I'm stuck with it.</Text>
-    <Address>600</Address>
+    <Address>600 101</Address>
   </Node>
-  <Node ID="600" Char="Charles">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Charles">
     <Text>It's been nice chatting with ya. Have a good night.</Text>
   </Node>
 </Root>

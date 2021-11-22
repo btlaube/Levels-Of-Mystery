@@ -12,7 +12,7 @@
     <Text>I'm Lucy! It's nice to meet you!</Text>
     <Address>102 201 301</Address>
   </Node>
-  <Node ID="102" Char="Steve">
+  <Node ID="102" Char="Steve" ShowOnce="True">
     <Text>What brings you to the apartments?</Text>
     <Address>103</Address>
   </Node>
@@ -28,7 +28,7 @@
     <Text>All the time! I had to be up super early for classes at home. Now, the school hours are just part of my routine.</Text>
     <Address>201 301 600</Address>
   </Node>
-  <Node ID="201" Char="Steve">
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>Do you know anyone else here?</Text>
     <Address>202</Address>
   </Node>
@@ -36,7 +36,7 @@
     <Text>Yes, I know Thomas! He's not always the best at conversation, but he's very nice once you get to know him!</Text>
     <Address>102 301 600</Address>
   </Node>
-  <Node ID="301" Char="Steve">
+  <Node ID="301" Char="Steve" ShowOnce="True">
     <Text>Did you know Mr. Lindson?</Text>
     <Address>302</Address>
   </Node>
@@ -52,7 +52,11 @@
     <Text>...It was just a suicide, right?</Text>
     <Address>102 201 600</Address>
   </Node>
-  <Node ID="600" Char="Lucy">
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Lucy">
     <Text>It was nice meeting you! Have a great day!</Text>
   </Node>
 </Root>
