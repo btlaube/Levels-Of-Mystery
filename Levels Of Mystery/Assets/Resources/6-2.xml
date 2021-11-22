@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Thomas">
+    <Text>I'm going to the lobby.</Text>
+    <Address>101 201 301</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>Did you know Mr. Lindson?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Thomas">
+    <Text>No.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>Did you know his wife?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Thomas">
+    <Text>No I didn't. I never met either one of them. All I know is, with how things are going, the battle is still far from over.</Text>
+    <Address>201 301 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Did you know Charles?</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Thomas">
+    <Text>Why are you so quick to mourn? We lost a man yesterday. It's just like on the battlefield, we were all just numbers, numbers and guns. And now all I am is a suspect, and he was just a victim.</Text>
+    <Address>203</Address>
+  </Node>
+  <Node ID="203" Char="Thomas">
+    <Text>Either way, it doesn't matter. He's gone. Leave the dead their peace, and leave me the rest of my day.</Text>
+    <Hint>Something really struck a nerve with him.</Hint>
+    <Address>601</Address>
+  </Node>
+  <Node ID="301" Char="Steve">
+    <Text>How are you today?</Text>
+    <Address>302</Address>
+  </Node>
+  <Node ID="302" Char="Thomas" ShowOnce="True">
+    <Text>I'm fine. I thought you should know that I saw Alex with a weird vial of something earlier today. Don't know what it was, but I don't trust it.</Text>
+    <Address>101 201 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Thomas">
+    <Text>Good day.</Text>
+  </Node>
+</Root>
