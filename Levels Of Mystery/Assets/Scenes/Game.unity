@@ -312,10 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1202fa7c0d68c14083461f289aa1f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5722397936714505388, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-  m_PrefabInstance: {fileID: 788229991}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &788229991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -422,7 +418,7 @@ PrefabInstance:
     - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 473916519}
+      objectReference: {fileID: 0}
     - target: {fileID: 3110926081953648687, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonLast
@@ -451,18 +447,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.46274513
       objectReference: {fileID: 0}
-    - target: {fileID: 4929125894774022299, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -321
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929125894774022299, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 182
-      objectReference: {fileID: 0}
     - target: {fileID: 4941692816624047408, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: npc
       value: 
-      objectReference: {fileID: 706222773}
+      objectReference: {fileID: 0}
     - target: {fileID: 4941692816624047408, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: player
       value: 
@@ -483,6 +471,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6036593425585679534, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049765713143246174, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049765713143246174, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -63
+      objectReference: {fileID: 0}
     - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -490,7 +490,7 @@ PrefabInstance:
     - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 473916519}
+      objectReference: {fileID: 0}
     - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonNext
@@ -506,18 +506,6 @@ PrefabInstance:
     - target: {fileID: 6330523634411893298, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6036593425585679534, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6049765713143246174, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 118
-      objectReference: {fileID: 0}
-    - target: {fileID: 6049765713143246174, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -63
       objectReference: {fileID: 0}
     - target: {fileID: 6443105922285409130, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

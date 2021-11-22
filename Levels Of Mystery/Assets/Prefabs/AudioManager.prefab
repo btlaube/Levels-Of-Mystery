@@ -64,6 +64,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ElevatorOpen
     clip: {fileID: 8300000, guid: 92610b557c6ed304189f75dd51aa6705, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PageTurn
+    clip: {fileID: 8300000, guid: a7784ab39f4d74640bb506484cfd0505, type: 3}
     volume: 1
     pitch: 1
     loop: 0
