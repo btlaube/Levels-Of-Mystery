@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>To the lobby?</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Thomas">
+    <Text>Yes.</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Steve" ShowOnce="True">
+    <Text>What are your thoughts about Lucy?</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Thomas">
+    <Text>She's not the killer.</Text>
+    <Address>104 106</Address>
+  </Node>
+  <Node ID="104" Char="Steve">
+    <Text>I'm not so sure. You were very quick to jump to her defense.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Thomas">
+    <Text>Believe what you want. But if you plan on questioning people, the least you can do is hear them out.</Text>
+    <Reputation>-2</Reputation>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="106" Char="Steve">
+    <Text>Why do you say that?</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="Thomas">
+    <Text>We've both been through a lot. We've both experienced the pain of losing those close to us. Someone who's felt that kind of pain... for them, killing isn't worth it.</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Do you distrust anyone in the apartments?</Text>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="202" Char="Thomas">
+    <Text>You don't seem so honest yourself.</Text>
+    <Address>102 600</Address>
+  </Node>
+  <Node ID="203" Char="Thomas">
+    <Text>I don't like Alex. She always has that tape recorder with her, and she always likes stirring up the past... some things are meant to be left alone.</Text>
+    <Threshold>5</Threshold>
+    <Address>102 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Thomas">
+    <Text>Good day.</Text>
+  </Node>
+</Root>
