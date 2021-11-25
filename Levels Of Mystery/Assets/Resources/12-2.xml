@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>To the sixth floor, I presume?</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Thomas">
+    <Text>Yes.</Text>
+    <Address>102 201 301</Address>
+  </Node>
+  <Node ID="102" Char="Steve" ShowOnce="True">
+    <Text>What do you think of Virginia?</Text>
+    <Address>103 104</Address>
+  </Node>
+  <Node ID="103" Char="Thomas">
+    <Text>We haven't interacted much.</Text>
+    <Address>201 301 600</Address>
+  </Node>
+  <Node ID="104" Char="Thomas">
+    <Text>She's too cold... as if she always has something better to do. I don't wish death on her, of course... never mind. I don't want to predict anyone else's death.</Text>
+    <Address>201 301 600</Address>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>What do you think of Caroline?</Text>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="203" Char="Thomas">
+    <Text>She's very nice. That's it, really.</Text>
+    <Address>102 301 600</Address>
+  </Node>
+  <Node ID="204" Char="Thomas">
+    <Text>She's one of the nicest women I've ever met. She's been through enough already in her life, and I hope she doesn't face any more pain.</Text>
+    <Threshold>6</Threshold>
+    <Address>102 301 600</Address>
+  </Node>
+  <Node ID="301" Char="Steve" ShowOnce="True">
+    <Text>It looks like you had a hard night.</Text>
+    <Address>302 303</Address>
+  </Node>
+  <Node ID="302" Char="Thomas">
+    <Text>One could say that.</Text>
+    <Address>102 201 600</Address>
+  </Node>
+  <Node ID="303" Char="Thomas">
+    <Threshold>7</Threshold>
+    <Text>I did. My health fades a bit in the cold... I've always had a pretty weak immune system. It's why I'm so sensitive to allergens and strong smells.</Text>
+    <Address>102 201 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Thomas">
+    <Text>Thanks. Have a good day.</Text>
+  </Node>
+</Root>
