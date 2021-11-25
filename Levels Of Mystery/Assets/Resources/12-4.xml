@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Lucy">
+    <Text>To the lobby, please.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>You have heard the news about Alex, right?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Lucy">
+    <Text>Yeah, but let's not talk about that. There are some lovely desserts in the cafe tonight!</Text>
+    <Address>103 201</Address>
+  </Node>
+  <Node ID="103" Char="Steve" ShowOnce="True">
+    <Text>You're dodging the question.</Text>
+    <Address>104 105</Address>
+  </Node>
+  <Node ID="104" Char="Lucy">
+    <Text>And right now, you're prying where you shouldn't.</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="105" Char="Lucy">
+    <Text>Look, I'm just as concerned as everyone else. I am. But I don't want to focus on the negatives - that's not how live works. You have to move on.</Text>
+    <Address>106</Address>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="106" Char="Lucy">
+    <Text>I've spent too much of my life waiting for things that won't come back.</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>What is your connection to Thomas?</Text>
+    <Address>202 301</Address>
+  </Node>
+  <Node ID="202" Char="Lucy">
+    <Text>I already told you. He reminds me of someone.</Text>
+    <Address>203 600</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>Yes, but you never told me whom.</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Lucy">
+    <Text>...</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Lucy">
+    <Text>I hope they still have cheesecake downstairs.</Text>
+    <Reputation>-1</Reputation>
+    <Address>600</Address>
+  </Node>
+  <Node ID="301" Char="Lucy">
+    <Text>He reminds me of my fiance back home. I haven't told anyone else yet, but... well, it's been long enough.</Text>
+    <Address>302</Address>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="302" Char="Lucy">
+    <Text>I met him during my studies and he proposed. Then, shortly after, he was drafted into the war. I waited for months for him to come back to me.</Text>
+    <Address>303</Address>
+  </Node>
+  <Node ID="303" Char="Lucy">
+    <Text>His letters were all that kept me sane, until one day, I received one in someone else's handwriting. His commander had written to tell me of my fiance's death.</Text>
+    <Address>304</Address>
+  </Node>
+  <Node ID="304" Char="Lucy">
+    <Text>They said he fought bravely, but that meant nothing to me. I lost my love, and if I had the chance, I'd do anything to get him back.</Text>
+    <Hint>Lucy is extremely devoted to love and those she wishes to protect. Would she kill to keep someone to herself?</Hint>
+    <Address>600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Lucy">
+    <Text>Goodnight, operator.</Text>
+  </Node>
+</Root>
