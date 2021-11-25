@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Caroline">
+    <Text>M-morning. F-f-first floor.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>Your stutter is back, are you okay? What's wrong?</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Caroline">
+    <Text>O-oh... n-nothing's wr-wrong, d-d-dear... I'm j-just a bit sh-shaken is a-a-all...</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Caroline">
+    <Text>P-please, do m-me a favor... s-st-stay s-safe tonight and t-t-tomorrow. S-something's coming.</Text>
+    <Hint>Caroline is aware of a coming danger. How involved is she?</Hint>
+  </Node>
+  <Node ID="201" Char="Caroline">
+    <Threshold>8</Threshold>
+    <Text>I'm s-scared, d-d-dear... t-tomorrow, it's h-happening to-tomorrow...</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Caroline">
+    <Text>It wi-will all end to-tomorrow, that's w-when sh-sh-she's coming for me...</Text>
+    <Address>203</Address>
+    <Hint>Caroline believes a woman will harm her tomorrow.</Hint>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>Who's coming for you?</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Caroline">
+    <Text>O-oh, I've s-said t-too much... d-d-don't w-worry ab-bout it...</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Caroline">
+    <Text>I n-n-need to go n-now... see you s-soon...</Text>
+  </Node>
+</Root>
