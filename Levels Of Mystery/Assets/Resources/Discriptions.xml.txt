@@ -33,13 +33,13 @@
 
 	<Person Id="5">
 
-		
+		An overly enthusiastic young woman. She feels very strongly about certain things, such as the past and suspicious behaviors; though beneficial, her emotions sometimes get the best of her. Perhaps her optimism is an overcompensation for something else?
 
 	</Person>
 
 	<Person Id="6">
 
-		a man in his 30s, greatly affected by his time serving in a recent war.
+		A young, quiet man who seems to have been severely impacted by a recent war. He lives in a constant state of guilt, though one cannot be certain if it is genuine or if it is a ruse. He only communicates with those closest to him.
 
 	</Person>
 
