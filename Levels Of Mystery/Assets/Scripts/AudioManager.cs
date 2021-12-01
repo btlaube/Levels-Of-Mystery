@@ -39,16 +39,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void UpdateSFXVolume(float value) {
-        //Sound s = Array.Find(sounds, sound => sound.name == "Click");
-        //if (s == null)
-        //    Debug.Log("No such audio clip");
-        //s.source.volume = value;
-        //List<string> sounds = new List<string>();
         string[] soundList = new string[]{"ElevatorDing", "Click", "ElevatorOpen", "PageTurn"};
-        //sounds.Add("ElevatorDing");
-        //sounds.Add("Click");
-        //sounds.Add("ElevatorOpen");
-        //sounds.Add("PageTurn");
         UpdateVolume(soundList, value);
     }
 
@@ -61,7 +52,7 @@ public class AudioManager : MonoBehaviour
 
     private void UpdateVolume(string[] soundList, float value) {
         foreach (string x in soundList) {
-            Sound s = Array.Find(sounds, sound => sound.name == "Click");
+            Sound s = Array.Find(sounds, sound => sound.name == x);
             if (s == null)
                 Debug.Log("No such audio clip");
             if (s.name == "ElevatorOpen"){
