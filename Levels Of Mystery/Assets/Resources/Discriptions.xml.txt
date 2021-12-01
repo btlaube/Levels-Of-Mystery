@@ -3,49 +3,43 @@
 
 	<Person Id="0">
 
-		older woman in her 70s, is extremely nice to everyone 
+		A kind old woman who has a strange connection with flowers. She seems to have a past riddled with loss and grief... is it motive enough for murder?
 
 	</Person>
 
 	<Person Id="1">
 
-		white woman in her 30s, wealthy and upper-class
+		She is cold, calculating, and a true believer in socioeconomic segregation. She enjoys the finer things in life and would do nearly anything to protect her status and public image.
 
 	</Person>
 
 	<Person Id="2">
 
-		while he’s kind enough and a general ‘gentleman’, few would guess that there’s more to James than meets the eye. 
+		Since a falling-out some years ago, James's family has viewed him as a failure. This caused him to retreat to insanity, and he is now a firm believer in the occult. At what point do his delusions meet reality?
 
 	</Person>
 
 	<Person Id="3">
 
-		the groundskeeper of the hotel, he is a few steps below the owner on the hierarchy of control in the hotel.
+		The handyman of the apartment complex and father of Mrs. Lindson, Charles is always busy with something. He doesn't seem particularly troubled with the recent events, but there could be more to him beneath the surface.
 
 	</Person>
 
 	<Person Id="4">
 
-		The failson of a storied family (that kind that brags about coming over on the May Flower)
+		Articles on propaganda propelled this ambitious young journalist to the top. She's known for embellishing the truth. After all, what good story isn't worth a little risk?
 
 	</Person>
 
 	<Person Id="5">
 
-		This traveling journalist got big by capturing the voice of the people writing Jingo-ist propaganda
+		An overly enthusiastic young woman. She feels very strongly about certain things, such as the past and suspicious behaviors; though beneficial, her emotions sometimes get the best of her. Perhaps her optimism is an overcompensation for something else?
 
 	</Person>
 
 	<Person Id="6">
 
-		Growing up under the despotic rule of French Algeria, in her short twenty-or-so years on this planet
-
-	</Person>
-
-	<Person Id="7">
-
-		a man in his 30s, greatly affected by his time serving in a recent war.
+		A young, quiet man who seems to have been severely impacted by a recent war. He lives in a constant state of guilt, though one cannot be certain if it is genuine or if it is a ruse. He only communicates with those closest to him.
 
 	</Person>
 
