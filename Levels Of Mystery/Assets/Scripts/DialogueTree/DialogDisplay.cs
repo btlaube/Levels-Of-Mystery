@@ -33,7 +33,7 @@ public class DialogDisplay : MonoBehaviour
             Tree = null; //will cause error, only for testing
         }
         Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
-        Debug.Log(Path);
+        //Debug.Log(Path);
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);
     }
@@ -64,7 +64,7 @@ public class DialogDisplay : MonoBehaviour
             int index = 1;
             foreach (string choice in Choices.Values)
             {
-                Debug.Log(choice);
+                //Debug.Log(choice);
                 textElement.text += $"{index} - {choice} \n";
                 index += 1;
             }
@@ -102,7 +102,7 @@ public class DialogDisplay : MonoBehaviour
             textElement.text = "end";
             if (Tree != null) //checks if we have progressed through at least one tree.
             {
-                Debug.Log("tree existed");
+                //Debug.Log("tree existed");
                 player.UpdateTime();
                 player.SavePlayer();
                 getPath();
