@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>How are you, Mr. Ja-</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="James">
+    <Text>No, no, no, we don't have time for that! Just take me to the third floor!</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Steve">
+    <Text>What's wrong?</Text>
+    <Reputation>+1</Reputation>
+    <Address>103 105</Address>
+  </Node>
+  <Node ID="103" Char="James">
+    <Text>I think I've just cracked it...</Text>
+    <Threshold>5</Threshold>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="James">
+    <Text>I have to return to my room, but when I next see you, I will have the answers!</Text>
+    <Hint>James may have figured out who the killer is.</Hint>
+  </Node>
+  <Node ID="105" Char="James">
+    <Text>Don't worry about that now.</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="James">
+    <Text>I must go, for I have a riddle to solve!</Text>
+    <Hint>James may have figured out who the killer is.</Hint>
+  </Node>
+  <Node ID="201" Char="Steve">
+    <Text>Please calm down, Mr. James.</Text>
+    <Reputation>-2</Reputation>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="202" Char="James">
+    <Text>No, I'm going to do my part to solve this mystery! Now, if you'll excuse me...</Text>
+    <Hint>James may have a lead on the killer's identity.</Hint>
+    <Threshold>3</Threshold>
+  </Node>
+  <Node ID="203" Char="James">
+    <Text>You keep telling me to calm down, as if these aren't stressful times we live in!</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="James">
+    <Text>I will not calm down. I will do my part to catch the villain, preferably without your interference. Now, I'll take my leave.</Text>
+  </Node>
+</Root>
