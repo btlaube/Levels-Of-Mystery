@@ -7,6 +7,9 @@ public class CanvasGroupScript : MonoBehaviour
 {
     string currentScene;
     public static CanvasGroupScript instance;
+    public Animator endOfDay;
+
+    //public float transitionTime = 10f;
 
     void Awake() {
         if (instance == null) {
@@ -60,6 +63,18 @@ public class CanvasGroupScript : MonoBehaviour
 
     public void HideNotebook() {
         transform.GetChild(4).gameObject.SetActive(false);
+    }
+
+    public void EndOfDay() {
+        transform.GetChild(5).gameObject.SetActive(true);
+        StartCoroutine(FadeOut());
+        //endOfDay.SetTrigger("Start");
+    }
+
+    IEnumerator FadeOut() {
+        yield return new WaitForSeconds(5);
+        ShowNotebook();
+        endOfDay.SetTrigger("Start");
     }
 
 }
