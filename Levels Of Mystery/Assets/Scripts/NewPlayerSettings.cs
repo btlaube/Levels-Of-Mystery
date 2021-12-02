@@ -9,8 +9,6 @@ public class NewPlayerSettings : MonoBehaviour
     private int defaultSFXVolume = 1;
     private int defaultMusicVolume = 1;
 
-    public AudioManager audioManager;
-
     public void Start()
     {
         initializeMusicVolume();
@@ -46,13 +44,5 @@ public class NewPlayerSettings : MonoBehaviour
     public void updateSFXVolume() {
         PlayerPrefs.SetFloat("SFXVolume", (float)(SFXVolume.value));
     }
-
-    //public void Reset() {
-    //    PlayerPrefs.DeleteKey("music");
-    //    music.isOn = true;
-    //
-    //    PlayerPrefs.DeleteKey("volume");
-    //    volume.value = defaultVolume;
-    //}
 
 }
