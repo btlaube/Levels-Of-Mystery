@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>Evening, sir.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="James">
+    <Text>...add a backwards eight here... then this and then... Oh, can I help you? Oh, yes, good evening, sir. Who are you?</Text>
+    <Address>102 103</Address>
+  </Node>
+  <Node ID="102" Char="Steve">
+    <Text>I am Mr. Devlin. I started working here a few days ago. Which floor, sir?</Text>
+    <Address>104</Address>
+    <Reputation>+1</Reputation>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>I'm Mr. Devlin, I'm new. Now what floor?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="James">
+    <Text>Third floor, if you would. Now, where was I... yes, yes, add this here, then rotate it, and they'll never be able to crack it!</Text>
+    <Address>105 109</Address>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>Is that the Sunday paper? I see that you're doing the puzzle.</Text>
+    <Reputation>+1</Reputation>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="James">
+    <Text>Not quite, I'm doing this for personal interest. There's much more to the paper than puzzles.</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="Steve">
+    <Text>I see... well, have a nice evening, sir.</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="James">
+    <Text>And you as well.</Text>
+  </Node>
+  <Node ID="109" Char="Steve">
+    <Text>Is that some kind of puzzle for those spy games or something?</Text>
+    <Reputation>-1</Reputation>
+    <Address>110</Address>
+  </Node>
+  <Node ID="110" Char="James">
+    <Text>No, but it's rather funny that you should mention such a thing. Tell me, who are you really?</Text>
+    <Address>111 112</Address>
+  </Node>
+  <Node ID="111" Char="Steve">
+    <Text>I'm just an elevator operator, that's all.</Text>
+    <Address>113</Address>
+  </Node>
+  <Node ID="112" Char="Steve">
+    <Text>I've told you the truth already. Calm down.</Text>
+    <Reputation>-1</Reputation>
+    <Address>113</Address>
+  </Node>
+  <Node ID="113" Char="James">
+    <Text>Hmm, I suppose time will tell. Good night.</Text>
+  </Node>
+</Root>
