@@ -9,8 +9,12 @@ public class EndDayScript : MonoBehaviour
     public Text time;
     public Player player;
 
+    public void Start() {
+        day.text = "Day " + (player.day - 1).ToString() + " completed.";
+    }
+
     public void UpdateDay() {
         Debug.Log(player.day);
-        day.text = "Day: " + player.day.ToString();
+        day.text = "Beginning day " + player.day.ToString() + "...";
     }
 }

@@ -68,11 +68,10 @@ public class CanvasGroupScript : MonoBehaviour
     public void EndOfDay() {
         transform.GetChild(5).gameObject.SetActive(true);
         StartCoroutine(FadeOut());
-        //endOfDay.SetTrigger("Start");
     }
 
     IEnumerator FadeOut() {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         ShowNotebook();
         endOfDay.SetTrigger("Start");
     }
