@@ -1242,9 +1242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-This is placeholder text 3333333333
-
-    333333333'
+  m_Text: '-'
 --- !u!1 &2995186827740879928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,9 +1844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-This is placeholder text 2222222222
-
-    222222222'
+  m_Text: '-'
 --- !u!1 &4406201406591595043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,9 +2157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-This is placeholder text 4444444444
-
-    444444444'
+  m_Text: '-'
 --- !u!1 &4853860353982874561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,8 +2423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240, y: 198}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 285.25568, y: 219}
+  m_SizeDelta: {x: 37.029, y: 36.3346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3982559609367229968
 CanvasRenderer:
@@ -2460,8 +2454,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4895928531576132435, guid: 3bff330bad0804940bee876921d96e2c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2842,7 +2836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5480208128693914450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3490,8 +3484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011206, y: 197.61}
-  m_SizeDelta: {x: 104.866, y: 30.78}
+  m_AnchoredPosition: {x: 3.1673, y: 197.61}
+  m_SizeDelta: {x: 111.2006, y: 30.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2922232161949128622
 CanvasRenderer:
@@ -3831,9 +3825,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-This is placeholder text 1111111111
-
-    111111111'
+  m_Text: '-'
 --- !u!1 &7616907927095410259
 GameObject:
   m_ObjectHideFlags: 0

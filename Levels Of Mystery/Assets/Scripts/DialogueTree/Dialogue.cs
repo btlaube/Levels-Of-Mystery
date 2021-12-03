@@ -36,8 +36,7 @@ public class Dialogue
     {
         if (CurrentNode["Hint"]?.InnerText != null)
         {
-            string hint = CurrentNode["Hint"].InnerText;
-            //Debug.Log(hint);
+           
         }
         else
         {
