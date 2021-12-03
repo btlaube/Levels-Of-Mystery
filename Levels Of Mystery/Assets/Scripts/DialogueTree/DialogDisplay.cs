@@ -66,13 +66,27 @@ public class DialogDisplay : MonoBehaviour
             {
                 //Debug.Log(choice);
                 textElement.text += $"{index} - {choice} \n";
+                //StopAllCoroutines();
+                //StartCoroutine(TypeDialogue($"{index} - {choice} \n"));
                 index += 1;
             }
         }
         else if (ChoiceCount == 1)
         {
-            textElement.text += $"{Choices.ElementAt(0).Value}";
+            //textElement.text += $"{Choices.ElementAt(0).Value}";            
+            StopAllCoroutines();
+            StartCoroutine(TypeDialogue($"{Choices.ElementAt(0).Value}"));
         }
+    }
+
+    IEnumerator TypeDialogue(string dialogue) {
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Dialogue");
+        textElement.text = "";
+        foreach (char letter in dialogue.ToCharArray()) {
+            textElement.text += letter;
+            yield return new WaitForSeconds(0.01f);
+        }
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
     }
 
     void Update()
