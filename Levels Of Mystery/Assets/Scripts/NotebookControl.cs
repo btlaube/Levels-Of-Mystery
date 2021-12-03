@@ -22,7 +22,7 @@ public class NotebookControl : MonoBehaviour
     {
         Text Hint1 = GameObject.Find("NotebookCanvas/Text Field 1").GetComponent<Text>();
         Hint1.text = "hinttest1";
-        if (i != 7)
+        if (i != 6)
         {
             i = i + 1;
             ReloadPage();
@@ -62,19 +62,14 @@ public class NotebookControl : MonoBehaviour
         if (i == 4)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "The Failson";
+            CharacterName.text = "Yellow Journalist";
         }
         if (i == 5)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "Yellow Journalist";
-        }
-        if (i == 6)
-        {
-            Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "War Bride";
         }
-        if (i == 7)
+        if (i == 6)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "Thomas";
@@ -143,8 +138,9 @@ public class NotebookControl : MonoBehaviour
     }
     public void UpdateImage()
     {
-     //   Image CharacterHead = GameObject.Find("Canvas/Character Picture").GetComponent<Image>().sprite1;
-     //   CharacterHead = "Assets\\Textures\\pepe.png";
+       // image.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);
+       //   Image CharacterHead = GameObject.Find("Canvas/Character Picture").GetComponent<Image>().sprite1;
+        //   CharacterHead = "Assets\\Textures\\pepe.png";
     }
     public void ReloadPage()
     {
