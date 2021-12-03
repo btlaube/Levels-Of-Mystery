@@ -7,7 +7,7 @@ public class CanvasGroupScript : MonoBehaviour
 {
     string currentScene;
     public static CanvasGroupScript instance;
-    public Animator endOfDay;
+    //public Animator endOfDay;
 
     void Awake() {
         if (instance == null) {
@@ -61,13 +61,17 @@ public class CanvasGroupScript : MonoBehaviour
 
     public void EndOfDay() {
         transform.GetChild(5).gameObject.SetActive(true);
-        StartCoroutine(FadeOut());
+        //StartCoroutine(FadeOut());
     }
 
-    IEnumerator FadeOut() {
-        yield return new WaitForSeconds(3);
-        ShowNotebook();
-        endOfDay.SetTrigger("Start");
+    public void GameSaved() {
+        transform.GetChild(6).gameObject.SetActive(true);
     }
+
+    //IEnumerator FadeOut() {
+    //    yield return new WaitForSeconds(3);
+    //    ShowNotebook();
+    //    endOfDay.SetTrigger("Start");
+    //}
 
 }
