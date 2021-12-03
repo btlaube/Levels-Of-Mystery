@@ -13,6 +13,8 @@ public class Dialogue
     public string Character = "None";
     public string CharacterPNGPath = "None";
 
+    public Player player;
+
     public void LoadDialogue(string path)
     {
         //Debug.Log($"Loading File: {path}");
@@ -74,7 +76,7 @@ public class Dialogue
                 CharacterPNGPath = "CharacterSprites\\Charles";
                 break;
             case "Virginia":
-                CharacterPNGPath = "CharacterSprites\\Virginia";
+                CharacterPNGPath = "CharacterSprites\\VirginiaTemp";
                 break;
             case "Lucy":
                 CharacterPNGPath = "CharacterSprites\\Lucy";

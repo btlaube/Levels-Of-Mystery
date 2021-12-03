@@ -1,5 +1,4 @@
-﻿
-<Root>
+﻿<Root>
   <Node ID="0">
     Starting Node. Just points to other nodes for starting text
     <Address>100</Address>

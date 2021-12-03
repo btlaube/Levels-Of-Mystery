@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public int day = 1;
     public int time = 1;
+    public Dictionary<string, List<string>> hints = new Dictionary<string, List<string>>();
 
     public static Player instance;
 
@@ -23,6 +24,10 @@ public class Player : MonoBehaviour
     }
 
     #region UI Methods
+
+    public void AddHint(string character, string hint) {
+        this.hints[character].Add(hint);
+    }
 
     public void UpdateDay() {
         day++;
