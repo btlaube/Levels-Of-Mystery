@@ -120,7 +120,7 @@ public class DialogDisplay : MonoBehaviour
             textElement.text = "end";
             if (Tree != null) //checks if we have progressed through at least one tree.
             {
-                //Debug.Log("tree existed");
+                Debug.Log("end");
                 player.UpdateTime();
                 player.SavePlayer();
                 getPath();
