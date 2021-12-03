@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Node ID="0">
+		<Address>100 101</Address>
+	</Node>
+	<Node ID="100" Char="Virginia">
+		<Threshold>3</Threshold>
+		<Text>Well if it isn't my favorite commoner.</Text>
+		<Address>201 202</Address>
+	</Node>
+	<Node ID="101" Char="Virginia">
+		<Text>Evening commoner.</Text>
+		<Address>201 202</Address>
+	</Node>
+	<Node ID="201" Char="Steve">
+		<Text>Why do you address me as commoner?</Text>
+		<Address>301</Address>
+	</Node>
+	<Node ID="301" Char="Virginia">
+		<Text>Well silly I'm top of the food chain while your at the bottom</Text>
+		<Address>401 402</Address>
+	</Node>
+	<Node ID="401" Char="Steve">
+		<Text>That's kind of rude miss.</Text>
+		<Address>501</Address>
+		<Reputation>-2</Reputation>
+	</Node>
+	<Node ID="501" Char="Virginia">
+		<Text>Such thin skin, you should really man up.</Text>
+		<Address>202</Address>
+	</Node>
+	<Node ID="402" Char="Steve">
+		<Text>I see miss.</Text>
+		<Reputation>+1</Reputation>
+		<Address>502</Address>
+	</Node>
+	<Node ID="502" Char="Virginia">
+		<Text>Well looks like you know your place.</Text>
+		<Address>202</Address>
+	</Node>
+	<Node ID="202" Char="Steve">
+		<Text>Did you hear about the manger?</Text>
+		<Address>302 303 304</Address>
+	</Node>
+	<Node ID="302" Char="Virginia">
+		<Threshold>4</Threshold>
+		<Text>Well of course so sad isn't it.</Text>
+		<Address>403</Address>
+	</Node>
+	<Node ID="303" Char="Virginia">
+		<Threshold>2</Threshold>
+		<Text>Of course, who has not heard at this point.</Text>
+		<Address>403</Address>
+	</Node>
+	<Node ID="304" Char="Virginia">
+		<Text>I live here of course I have.</Text>
+		<Address>403</Address>
+	</Node>
+	<Node ID="403" Char="Steve">
+		<Text>Kind of sad that the manger thought that was the only way out. What was he thinking?</Text>
+		<Address>503 504</Address>
+	</Node>
+	<Node ID="503" Char="Virginia">
+		<Threshold>3</Threshold>
+		<Text>Well darling that man has always had a weak will.</Text>
+		<Address>601 602</Address>
+	</Node>
+	<Node ID="601" Char="Steve">
+		<Text>That's very rude to talk about a deadman. One should give him some dignity.</Text>
+		<Address>701</Address>
+		<Reputation>-1</Reputation>
+	</Node>
+	<Node ID="701" Char="Virginia">
+		<Text>Oh, dear you are so kind and weak for this world.</Text>
+	</Node>
+	<Node ID="602" Char="Steve">
+		<Text>My didn't know he was such a low and pathitic man.</Text>
+		<Reputation>+1</Reputation>
+		<Address>702</Address>
+	</Node>
+	<Node ID="702" Char="Virginia">
+		<Text>You are right, he was pathitic man indeed. There is no other way to describe that man.</Text>
+	</Node>
+	<Node ID="504" Char="Virginia">
+		<Text>I thought you said you do not like rumors.</Text>
+	</Node>
+</Root>
