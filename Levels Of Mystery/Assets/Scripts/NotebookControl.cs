@@ -10,7 +10,7 @@ using System.Xml.XPath;
 public class NotebookControl : MonoBehaviour
 {
     
-    public int i = 0;
+    private int i = 0;
 
     public XmlDocument personDataXml;
 

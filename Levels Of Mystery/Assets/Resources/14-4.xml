@@ -4,91 +4,53 @@
     starting point
     <Address>100</Address>
   </Node>
-  <Node ID="100" Char="Steve">
-    <Text>Which floor?</Text>
+  <Node ID="100" Char="James">
+    <Text>Good evening, Mr. Devlin. I'm going to the third floor.</Text>
     <Address>101</Address>
   </Node>
-  <Node ID="101" Char="Lucy">
-    <Text>Oh... floor six, please.</Text>
-    <Address>102</Address>
+  <Node ID="101" Char="Steve">
+    <Text>Have you picked up any more clues?</Text>
+    <Address>102 201</Address>
   </Node>
-  <Node ID="102" Char="Thomas">
-    <Text>...</Text>
+  <Node ID="102" Char="James">
+    <Text>To be honest, Mr. Devlin, I am uncertain of your intentions.</Text>
     <Address>103</Address>
   </Node>
-  <Node ID="103" Char="Lucy">
-    <Text>...</Text>
+  <Node ID="103" Char="James">
+    <Text>Sometimes it seems that you genuinely wish to help, yet you may still seek to sabotage.</Text>
     <Address>104</Address>
   </Node>
-  <Node ID="104" Char="Steve">
-    <Text>You're both very quiet.</Text>
+  <Node ID="104" Char="James">
+    <Text>You cannot be trusted. I will not place any more lives at stake.</Text>
     <Address>105</Address>
   </Node>
-  <Node ID="105" Char="Lucy">
-    <Text>Well, Thomas thinks...</Text>
-    <Address>106 201</Address>
+  <Node ID="105" Char="James">
+    <Text>...Perhaps you are a viper, too.</Text>
   </Node>
-  <Node ID="106" Char="Thomas">
-    <Text>Shhhh! Lucy, don't tell him. He won't believe us anyway.</Text>
-    <Address>107</Address>
-  </Node>
-  <Node ID="107" Char="Lucy">
-    <Text>Oh, right. Well, in that case, we'll be off. Bye.</Text>
-    <Hint>Thomas and Lucy know something, and they're reluctant to share it.</Hint>
-  </Node>
-  <Node ID="201" Char="Thomas">
-    <Text>I don't think, I know. There's going to be another murder tomorrow.</Text>
+  <Node ID="201" Char="James">
     <Threshold>7</Threshold>
-    <Address>202 301</Address>
+    <Text>You must promise not to tell anyone.</Text>
+    <Address>202 204</Address>
   </Node>
-  <Node ID="202" Char="Steve" ShowOnce="True">
-    <Text>What's your proof?</Text>
+  <Node ID="202" Char="Steve">
+    <Text>Depending on what you say, I may have to tell the police.</Text>
+    <Reputation>-1</Reputation>
     <Address>203</Address>
   </Node>
-  <Node ID="203" Char="Thomas">
-    <Text>There's been a new victim every five days. Charles, then Alex, and then tomorrow marks the next five.</Text>
-    <Address>204</Address>
+  <Node ID="203" Char="James">
+    <Text>Then I'm afraid I have nothing to share. Good night, Mr. Devlin.</Text>
   </Node>
-  <Node ID="204" Char="Lucy">
-    <Text>Thomas noticed the pattern awhile ago, but we didn't think it would go on this long...</Text>
-    <Hint>Thomas and Lucy recognized and deliberately hid the pattern of the murders.</Hint>
+  <Node ID="204" Char="Steve">
+    <Reputation>+2</Reputation>
+    <Text>Yes, I promise.</Text>
     <Address>205</Address>
   </Node>
-  <Node ID="205" Char="Thomas">
-    <Text>No, but it's clear now that whoever's behind this has no intent of stopping.</Text>
+  <Node ID="205" Char="James">
+    <Text>I cannot give you names, but I can say this: the viper is cold and cunning. She is blinded by golden greed, and it may be her downfall.</Text>
     <Address>206</Address>
+    <Hint>According to James, the killer "viper" is someone who is calculating and greedy.</Hint>
   </Node>
-  <Node ID="206" Char="Thomas">
-    <Text>We're keeping a low profile for the night, but please, if nothing else, be wary tonight and tomorrow. Who knows what will happen next?</Text>
-    <Address>207</Address>
-  </Node>
-  <Node ID="207" Char="Lucy">
-    <Text>Yes. Good night, operator.</Text>
-  </Node>
-  <Node ID="301" Char="Steve">
-    <Text>Who do you think is next?</Text>
-    <Address>302</Address>
-  </Node>
-  <Node ID="302" Char="Lucy">
-    <Reputation>-1</Reputation>
-    <Text>I bet it'll be Caroline, no one can be that sweet all the time.</Text>
-    <Hint>Lucy was quick to point out Caroline as a victim.</Hint>
-    <Address>303</Address>
-  </Node>
-  <Node ID="303" Char="Thomas">
-    <Text>Lucy!</Text>
-    <Reputation>-1</Reputation>
-    <Address>304</Address>
-  </Node>
-  <Node ID="304" Char="Lucy">
-    <Text>What? Am I wrong?</Text>
-    <Address>305</Address>
-  </Node>
-  <Node ID="305" Char="Thomas">
-    <Text>...</Text>
-    <Address>306</Address>
-  </Node>
-  <Node ID="306" Char="Lucy">
-    <Text>Exactly. Anyway, we're not going anywhere else tonight, so please watch yourself. Night.</Text>
+  <Node ID="206" Char="James">
+    <Text>I have said too much! I'll now be off.</Text>
   </Node>
 </Root>

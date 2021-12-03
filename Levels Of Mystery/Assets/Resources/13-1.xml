@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>Good morning, Mr. James.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="James">
+    <Text>Hello. To the third floor.</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Steve">
+    <Text>How are you doing?</Text>
+    <Address>103</Address>
+    <Reputation>+1</Reputation>
+  </Node>
+  <Node ID="103" Char="James">
+    <Text>Terribly. Last time we met, you didn't tell me the eagle was dead...</Text>
+    <Address>104 107</Address>
+  </Node>
+  <Node ID="104" Char="Steve">
+    <Text>What eagle?</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="James">
+    <Text>Alex! We're all just trapped here like animals, and now we'll all die! She was the only hope for stopping the viper...</Text>
+    <Hint>It seems like James didn't know about Alex's death until recently. He also had a positive opinion of her.</Hint>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="James">
+    <Text>Now, all we can do is wait for it to strike again. I will see you around, Mr. Devlin.</Text>
+  </Node>
+  <Node ID="107" Char="Steve">
+    <Text>Not this again...</Text>
+    <Reputation>-2</Reputation>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="James">
+    <Text>Ah, I'm sorry, I forgot this was all just a game for you. We're just pieces to be picked off one by one, aren't we?</Text>
+    <Address>109</Address>
+  </Node>
+  <Node ID="109" Char="James">
+    <Text>Know that I'll be watching your every move, Mr. Devlin. If you try anything to harm us, you'll be facing me.</Text>
+  </Node>
+  <Node ID="201" Char="Steve">
+    <Text>I presume that you've heard of Alex's death by now?</Text>
+    <Reputation>-1</Reputation>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="James">
+    <Text>Yes. I have. I can't believe you didn't mention her the last time I saw you. I'm starting to wonder what your role is in all this...</Text>
+    <Address>203</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>As I've said, I'm simply an elevator operator. This is my job.</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="James">
+    <Text>Do you *really* believe that? You pry a lot for a neutral party...</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="James">
+    <Text>There are more important matters at hand than where your loyalties lie. I will be leaving now.</Text>
+  </Node>
+</Root>

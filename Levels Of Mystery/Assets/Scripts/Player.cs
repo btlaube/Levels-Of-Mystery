@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 
     public void UpdateDay() {
         day++;
+        GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
     }
 
     public void UpdateTime() {
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
 
     public void SavePlayer() {
         SaveSystem.SavePlayer(this);
+        GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().GameSaved();
     }
 
     public void LoadPlayer() {

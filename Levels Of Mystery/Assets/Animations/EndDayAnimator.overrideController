@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EndDayAnimator
+  m_Controller: {fileID: 9100000, guid: e4291b31fad00ed4188aaa1392dbb59b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b09afbe1a99417c41a180edaf479b3bd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6d228c8d672768346bc0a8f25e2e5802, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6d228c8d672768346bc0a8f25e2e5802, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b09afbe1a99417c41a180edaf479b3bd, type: 2}

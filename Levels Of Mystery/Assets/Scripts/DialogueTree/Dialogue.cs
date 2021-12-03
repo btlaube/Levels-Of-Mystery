@@ -15,10 +15,10 @@ public class Dialogue
 
     public void LoadDialogue(string path)
     {
-        Debug.Log($"Loading File: {path}");
+        //Debug.Log($"Loading File: {path}");
         if (File.Exists(path))
         {
-            Debug.Log($"File: {path} existed");
+            //Debug.Log($"File: {path} existed");
             Doc.Load(path);
             CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
         }
@@ -37,11 +37,11 @@ public class Dialogue
         if (CurrentNode["Hint"]?.InnerText != null)
         {
             string hint = CurrentNode["Hint"].InnerText;
-            Debug.Log(hint);
+            //Debug.Log(hint);
         }
         else
         {
-            Debug.Log("no hint found");
+            //Debug.Log("no hint found");
         }
     }
 
@@ -49,10 +49,10 @@ public class Dialogue
     {
         Debug.Log("update character called");
         if (node != null) {
-            Debug.Log("node is not null");
+            //Debug.Log("node is not null");
         }
         else {
-            Debug.Log("node is null");
+            //Debug.Log("node is null");
         }
         //Debug.Log(node.Attributes["ID"].Value);
         Debug.Log(node.Attributes["ID"].Value);
@@ -60,7 +60,7 @@ public class Dialogue
         {
             if (Character == node.Attributes["Char"].Value) { return; }
             Character = node.Attributes["Char"].Value;
-            Debug.Log($"char name: {Character}");
+            //Debug.Log($"char name: {Character}");
         }
         catch (NullReferenceException) { Debug.Log("character not found"); }
 

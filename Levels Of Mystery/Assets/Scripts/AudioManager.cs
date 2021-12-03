@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void UpdateSFXVolume(float value) {
-        string[] soundList = new string[]{"ElevatorDing", "Click", "ElevatorOpen", "PageTurn"};
+        string[] soundList = new string[]{"ElevatorDing", "Click", "ElevatorOpen", "PageTurn", "Dialogue", "Steven"};
         UpdateVolume(soundList, value);
     }
 
