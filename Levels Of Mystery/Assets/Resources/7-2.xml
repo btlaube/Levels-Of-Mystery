@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Stranger">
+    <Text>Good afternoon, Mr. Devlin. Second floor, please.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>Same to you. Do you know what's happening outside?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Stranger">
+    <Text>Yeah, didn't you hear about Charles? He died last night. The police say it's from a snake bite.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>I know, it's terrible. Has anyone said anything about how a snake got in?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Stranger">
+    <Text>No, not really, but it is strange, isn't it? Snakes aren't even native to this part of town, and harder to find is the kind of poison that killed the victims.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>That is strange...</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Stranger">
+    <Text>I also don't know why he was tending to the flowerbeds at night when most of them are dead from the cold... I also heard that Virginia has been giving flowers to Caroline.</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="Stranger">
+    <Text>That woman, Virginia, has issues on top of issues, but don't we all?</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="Stranger">
+    <Text>Anyway, I've got to get going. I'll see you around, Steve.</Text>
+  </Node>
+</Root>
