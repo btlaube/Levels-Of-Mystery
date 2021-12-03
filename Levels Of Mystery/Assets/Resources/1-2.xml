@@ -2,7 +2,7 @@
 	<Node ID="0">
 		<Address>100</Address>
 		</Node>
-	<Node ID="100" Char="Virgina">
+	<Node ID="100" Char="Virginia">
 		<Text>Morning, get me to the first floor.</Text>
 		<Address>101 201 301</Address>
 	</Node>
@@ -11,14 +11,14 @@
 		<Address>102</Address>
 		<Reputation>+2</Reputation>
 	</Node>
-	<Node ID="102" Char="Virgina">
-		<Text>You mean you don't know who I am well let me enlighten you. I'm Virgina Duham, I own this cities oil.</Text>
+	<Node ID="102" Char="Virginia">
+		<Text>You mean you don't know who I am well let me enlighten you. I'm Virginia Duham, I own this cities oil.</Text>
 		</Node>
 	<Node ID="111" Char="Steve">
 		<Text>What was the name of your oil company?</Text>
 		<Address>112</Address>
 	</Node>
-	<Node ID="112" Char="Virgina">
+	<Node ID="112" Char="Virginia">
 		<Text>Well you may not have heard of it but, VOil</Text>
 		<Address>113 301</Address>
 	</Node>
@@ -31,7 +31,7 @@
 		<Address>122</Address>
 		<Reputation>-1</Reputation>
 	</Node>
-	<Node ID="122" Char="Virgina">
+	<Node ID="122" Char="Virginia">
 		<Text>Well how very ungentleman like of you but if you must know I'm 35; but I get confused for 25 often.</Text>
 		<Address>123</Address>
 	</Node>
@@ -40,7 +40,7 @@
 		<Address>124</Address>
 		<Reputation>+1</Reputation>
 	</Node>
-	<Node ID="124" Char="Virgina">
+	<Node ID="124" Char="Virginia">
 		<Text>Why yes, I in fact have a collection of purple diamons</Text>
 	</Node>
 	<Node ID="201" Char="Steve">
@@ -48,7 +48,7 @@
 		<Address>210</Address>
 		<Reputation>-3</Reputation>
 	</Node>
-	<Node ID="210" Char="Virgina">
+	<Node ID="210" Char="Virginia">
 		<Text>Well I never, you are such a rude man. But I expect that of you who was born a commoner</Text>
 		<Address>211 212 301</Address>
 	</Node>
@@ -56,22 +56,22 @@
 		<Text>I'm sorry about that. Didn't mean to be rude miss.</Text>
 		<Address>221</Address>
 	</Node>
-	<Node ID="221" Char="Virgina">
+	<Node ID="221" Char="Virginia">
 		<Text>I blame your parents.</Text>
 	</Node>
 	<Node ID="212" Char="Steve">
 		<Text>What's your name?</Text>
 		<Address>222</Address>
 	</Node>
-	<Node ID="222" Char="Virgina">
-		<Text>Virgina Duham, remeber that next time commoner.</Text>
+	<Node ID="222" Char="Virginia">
+		<Text>Virginia Duham, remeber that next time commoner.</Text>
 	</Node>
 	<Node ID="301" Char="Steve">
 		<Text>What brought you to the apartments?</Text>
 		<Address>311</Address>
 		<Reputation>+1</Reputation>
 	</Node>
-	<Node ID="311" Char="Virgina">
+	<Node ID="311" Char="Virginia">
 		<Text>Daddy thought I should get a taste of commoner life to make me humble. Obviously it's working.</Text>
 		<Address>321</Address>
 	</Node>
@@ -79,7 +79,7 @@
 		<Text>Do you enjoy it here?</Text>
 		<Address>331</Address>
 	</Node>
-	<Node ID="331" Char="Virgina">
+	<Node ID="331" Char="Virginia">
 		<Text>Whats there to enjoy here? There's no pool for yourself or tenis court. However, there is one thing that is the rumors this place creates.</Text>
 		<Address>341 342</Address>
 	</Node>
@@ -88,7 +88,7 @@
 		<Reputation>+1</Reputation>
 		<Address>351</Address>
 	</Node>
-	<Node ID="351" Char="Virgina">
+	<Node ID="351" Char="Virginia">
 		<Text>Maybe your not so bad yourself commoner. Well I believe you'll start all sorts of rumors here soon.</Text>
 	</Node>
 	<Node ID="342" Char="Steve">
@@ -96,7 +96,7 @@
 		<Address>352</Address>
 		<Reputation>-2</Reputation>
 	</Node>
-	<Node ID="352" Char="Virgina">
+	<Node ID="352" Char="Virginia">
 		<Text>My God man, It's nothing serious as far as just a little fun</Text>
 	</Node>
 </Root>
