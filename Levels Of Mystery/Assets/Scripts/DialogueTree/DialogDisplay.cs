@@ -59,22 +59,26 @@ public class DialogDisplay : MonoBehaviour
         //npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
         image.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);
         //image.SetNativeSize();
-        if (ChoiceCount > 1)
+        if (Tree.Character == "Steve")
         {
             int index = 1;
+            textElement.text = "";
             foreach (string choice in Choices.Values)
             {
                 //Debug.Log(choice);
                 textElement.text += $"{index} - {choice} \n";
-                //StopAllCoroutines();
+                StopAllCoroutines();
+                GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
                 //StartCoroutine(TypeDialogue($"{index} - {choice} \n"));
                 index += 1;
             }
         }
-        else if (ChoiceCount == 1)
+        else
         {
-            //textElement.text += $"{Choices.ElementAt(0).Value}";            
+            //textElement.text += $"{Choices.ElementAt(0).Value}";
+            //textElement.text = "";
             StopAllCoroutines();
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
             StartCoroutine(TypeDialogue($"{Choices.ElementAt(0).Value}"));
         }
     }
@@ -92,7 +96,7 @@ public class DialogDisplay : MonoBehaviour
     void Update()
     {
         //listens for enter/number key/ to update text box and perform necessary operations.
-        if (ChoiceCount > 1)
+        if (Tree.Character == "Steve")
         {
             for (int i = 1; i <= ChoiceCount; i++)
             {
