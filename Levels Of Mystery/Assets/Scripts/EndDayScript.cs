@@ -17,4 +17,9 @@ public class EndDayScript : MonoBehaviour
         Debug.Log(player.day);
         day.text = "Beginning day " + player.day.ToString() + "...";
     }
+
+    public void HideSelf() {
+        gameObject.SetActive(false);
+    }
+
 }

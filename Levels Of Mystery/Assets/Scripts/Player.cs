@@ -26,7 +26,6 @@ public class Player : MonoBehaviour
 
     public void UpdateDay() {
         day++;
-        //GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowNotebook();
         GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
     }
 

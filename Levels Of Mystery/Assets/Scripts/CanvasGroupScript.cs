@@ -9,8 +9,6 @@ public class CanvasGroupScript : MonoBehaviour
     public static CanvasGroupScript instance;
     public Animator endOfDay;
 
-    //public float transitionTime = 10f;
-
     void Awake() {
         if (instance == null) {
             instance = this;
