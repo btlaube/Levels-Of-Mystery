@@ -72,7 +72,22 @@ public class Dialogue
                 CharacterPNGPath = "CharacterSprites\\Caroline";
                 break;
             case "Charles":
-                CharacterPNGPath = "CharacterSprites\\CharlesTemp";
+                CharacterPNGPath = "CharacterSprites\\Charles";
+                break;
+            case "Virginia":
+                CharacterPNGPath = "CharacterSprites\\Virginia";
+                break;
+            case "Lucy":
+                CharacterPNGPath = "CharacterSprites\\Lucy";
+                break;
+            case "Thomas":
+                CharacterPNGPath = "CharacterSprites\\Thomas";
+                break;
+            case "James":
+                CharacterPNGPath = "CharacterSprites\\James";
+                break;
+            case "Alex":
+                CharacterPNGPath = "CharacterSprites\\AlexTemp";
                 break;
             default:
                 Debug.Log("No character. Found Speaking.");
