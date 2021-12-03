@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>Good afternoon, Ms. Alex. What floor?</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Alex">
+    <Text>Indeed it is. Floor three, please.</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="Steve">
+    <Text>You seem to be in a good mood today. Is there good news?</Text>
+    <Address>103 104</Address>
+  </Node>
+  <Node ID="103" Char="Alex">
+    <Text>Let's just say that this story I'm working on won't be so awful after all.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="104" Char="Alex">
+    <Threshold>1</Threshold>
+    <Text>Yes, I may have evidence that indicates a homicide rather than a suicide.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>Would you care to share this "evidence"?</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Alex">
+    <Text>You should now better than that, operator. A reporter never exposes her sources. Anyway, have a good day.</Text>
+  </Node>
+  <Node ID="201" Char="Steve">
+    <Text>I see, I'm glad you're having a good day.</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Alex">
+    <Text>Well? Aren't you curious why?</Text>
+    <Address>203 204</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>Yes, actually, I am.</Text>
+    <Reputation>+1</Reputation>
+    <Address>103</Address>
+  </Node>
+  <Node ID="204" Char="Steve">
+    <Text>I'm not the nosy type. If you're happy, then I'm glad, but I'm not concerned about why.</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Alex">
+    <Text>Ha! We both know that's a lie. You're exactly the type to poke your nose where it doesn't belong. But, I suppose if you don't want to hear, then I hope you have a good day.</Text>
+  </Node>
+</Root>
