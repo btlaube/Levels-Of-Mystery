@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve">
+    <Text>Good afternoon, Ms. Alex. Floor two, as usual?</Text>
+    <Address>101 102</Address>
+  </Node>
+  <Node ID="101" Char="Alex">
+    <Text>Yes, thank you. I thought about what you said a few days ago, but I've decided that I disagree. I'm a reporter, not a coward, and it's my job to give the people the truth.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="102" Char="Alex">
+    <Text>Yes, thanks. I might have finally found my lead on the killer. The only thing stopping them is deciding who their next target will be...</Text>
+    <Address>103</Address>
+    <Threshold>4</Threshold>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>Well, I'm glad you're doing fine. Have you found any new leads?</Text>
+    <Address>104 105</Address>
+  </Node>
+  <Node ID="104" Char="Alex">
+    <Text>I'm not sure yet. As you said, anyone here could be the next victim. I'm keeping my evidence close to my chest.</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="105" Char="Alex">
+    <Threshold>4</Threshold>
+    <Text>Well, my source doesn't say names in case she's wrong. All I know is that there could be more forces at play here than anyone is aware of.</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Alex">
+    <Text>This is my floor. I'm going to keep finding clues, and I'll get back to you later. Have a good day!</Text>
+  </Node>
+</Root>
