@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
 
     public void SavePlayer() {
         SaveSystem.SavePlayer(this);
-        //call show game saved.
         GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().GameSaved();
     }
 
