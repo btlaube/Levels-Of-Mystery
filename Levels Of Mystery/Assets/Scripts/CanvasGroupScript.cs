@@ -65,5 +65,4 @@ public class CanvasGroupScript : MonoBehaviour
     public void GameSaved() {
         transform.GetChild(6).gameObject.SetActive(true);
     }
-
 }

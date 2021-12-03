@@ -14,7 +14,8 @@ public class EndDayScript : MonoBehaviour
 
     public void UpdateDay() {
         Debug.Log(player.day);
-        day.text = "Beginning day " + player.day.ToString() + "...";
+        day.text = "Beginning day " + player.day.ToString() + "...";        
+        GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowNotebook();
     }
 
     public void HideSelf() {
