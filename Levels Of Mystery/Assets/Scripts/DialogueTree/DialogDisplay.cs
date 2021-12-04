@@ -35,7 +35,8 @@ public class DialogDisplay : MonoBehaviour
         //if (player.day == 16) {
         //    this.enabled = false;
         //}
-        Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
+        //Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
+        Path = Application.dataPath + "/StreamingAssets/"+player.day+"-"+player.time+".xml";
         //Debug.Log(Path);
         Tree.LoadDialogue(Path);
         ChangeChoices(Tree.CurrentNode.Attributes["ID"].Value);

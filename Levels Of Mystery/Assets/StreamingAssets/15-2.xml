@@ -1,0 +1,45 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Thomas" NPC1="Thomas" NPC2="Lucy">
+    <Text>To the lobby.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>Where are you both going?</Text>
+    <Address>102 104</Address>
+  </Node>
+  <Node ID="102" Char="Lucy">
+    <Text>We don't have to tell you anything.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Thomas">
+    <Text>But... either way, we will hopefully see you tomorrow. Be alert tonight. Goodbye...</Text>
+  </Node>
+  <Node ID="104" Char="Lucy">
+    <Text>We're leaving before either of us gets killed. We figured it would be best to spend the night elsewhere instead of tempting fate.</Text>
+    <Threshold>7</Threshold>
+    <Address>105 107</Address>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>Thomas, who do you think is the killer?</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Thomas">
+    <Text>It's Virginia, it has to be. She's too calculating, too severe. I don't know why she's doing this, but it makes the most sense.</Text>
+    <Address>600</Address>
+  </Node>
+  <Node ID="107" Char="Lucy">
+    <Text>It has to be Caroline. Her whole innocent facade isn't cutting it for me. Something sinister's going on in her mind...</Text>
+    <Address>600</Address>
+  </Node>
+  <Node ID="600" Char="Lucy">
+    <Text>We wish you the best tonight, operator. Hopefully we'll see you tomorrow...</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Thomas">
+    <Text>Yes. Watch your back, and look out for anything suspicious... until we meet again.</Text>
+  </Node>
+</Root>

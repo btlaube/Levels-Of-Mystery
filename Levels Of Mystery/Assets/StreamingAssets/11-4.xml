@@ -1,0 +1,140 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Thomas" NPC1="Thomas" NPC2="">
+    <Text>Lobby.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>Are you alright?</Text>
+    <Address>102 201 301</Address>
+  </Node>
+  <Node ID="102" Char="Thomas">
+    <Text>Ha... do you even care? I'm just a suspect of your investigation, after all.</Text>
+    <Address>103 106</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>What has you so upset?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Thomas">
+    <Text>You don't deserve to know.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Thomas">
+    <Text>That's all. Have a good night, operator.</Text>
+  </Node>
+  <Node ID="106" Char="Steve">
+    <Text>I do care for your safety. You're a resident here, and you're entitled to feeling secure.</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="Thomas">
+    <Text>I... thank you, it means a lot to hear someone say that.</Text>
+    <Reputation>+2</Reputation>
+    <Address>202</Address>
+  </Node>
+  <Node ID="201" Char="Thomas">
+    <Text>If I'm being honest, no. I'm not. But I can't hide in the shadows forever.</Text>
+    <Threshold>6</Threshold>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Thomas">
+    <Text>Tell me honestly, operator... do you think that I killed Alex?</Text>
+    <Address>203 208</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>I don't know.</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Thomas">
+    <Text>...I don't think I did, but I can't convince you of that, can I? I can't even convince myself.</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Thomas">
+    <Text>When I was still a soldier, I made a mistake that cost the lives of the rest of my team. I still hold the guilt to this day.</Text>
+    <Address>206</Address>
+  </Node>
+  <Node ID="206" Char="Thomas">
+    <Text>Whether it's here or on the battlefield, it doesn't seem to matter. Death follows me everywhere I go.</Text>
+    <Hint>Is this an admission of guilt?</Hint>
+    <Address>207</Address>
+  </Node>
+  <Node ID="207" Char="Thomas">
+    <Text>Well, I guess it's time for me to go. Have a good night.</Text>
+  </Node>
+  <Node ID="208" Char="Steve">
+    <Text>Yes.</Text>
+    <Address>209</Address>
+  </Node>
+  <Node ID="209" Char="Thomas">
+    <Text>...</Text>
+    <Reputation>-3</Reputation>
+    <Address>210</Address>
+  </Node>
+  <Node ID="210" Char="Thomas">
+    <Text>Alright. Good night, then.</Text>
+  </Node>
+  <Node ID="301" Char="Thomas">
+    <Text>No, I'm not. I'm terrified, and I'm worried that I may have caused Alex's death.</Text>
+    <Threshold>7</Threshold>
+    <Address>302 305</Address>
+  </Node>
+  <Node ID="302" Char="Steve">
+    <Text>Is that a confession?</Text>
+    <Address>303</Address>
+  </Node>
+  <Node ID="303" Char="Thomas">
+    <Text>I don't know anymore.</Text>
+    <Reputation>-2</Reputation>
+    <Hint>Thomas did not agree, nor did he disagree with the accusation.</Hint>
+    <Address>304</Address>
+  </Node>
+  <Node ID="304" Char="Thomas">
+    <Text>I should go to bed. Night.</Text>
+  </Node>
+  <Node ID="305" Char="Steve">
+    <Text>Why do you say that?</Text>
+    <Address>306</Address>
+  </Node>
+  <Node ID="306" Char="Thomas">
+    <Text>I told everyone that I was suspicious of her, but she didn't deserve this! What if I convinced someone to kill her? What if it's all my fault?</Text>
+    <Address>307 309</Address>
+  </Node>
+  <Node ID="307" Char="Steve">
+    <Text>(say nothing)</Text>
+    <Address>308</Address>
+  </Node>
+  <Node ID="308" Char="Thomas">
+    <Text>...I should go. Goodnight.</Text>
+  </Node>
+  <Node ID="309" Char="Steve">
+    <Text>There's no way you could have known this would happen.</Text>
+    <Address>310</Address>
+  </Node>
+  <Node ID="310" Char="Thomas">
+    <Reputation>+2</Reputation>
+    <Text>I appreciate your faith in me, but I should have known. It's just like my last battle when I was a soldier.</Text>
+    <Address>311</Address>
+  </Node>
+  <Node ID="311" Char="Thomas">
+    <Text>Me and my team, we were on a mission that required absolute stealth. I hit something and made a sound... next thing I knew, I was in the hospital, and they...</Text>
+    <Address>312</Address>
+  </Node>
+  <Node ID="312" Char="Thomas">
+    <Text>...they were all dead. Living was my karma. I still hold that guilt with me every day, and just when I thought I was moving past it, the murders started.</Text>
+    <Address>313</Address>
+  </Node>
+  <Node ID="313" Char="Thomas">
+    <Text>But, see, what they don't tell you is that living is harder than dying. Because the fallen get to watch from their graves, and their families get to cry for their sons who will never come home.</Text>
+    <Address>314</Address>
+  </Node>
+  <Node ID="314" Char="Thomas">
+    <Text>...Anyway, that's all in the past. What matters now is stopping the monster that has it out for us all.</Text>
+    <Address>315</Address>
+  </Node>
+  <Node ID="315" Char="Thomas">
+    <Text>Thank you for listening to me. Sorry for using so much of your time. Have a good night, and please stay safe.</Text>
+  </Node>
+</Root>

@@ -1,0 +1,46 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Caroline" NPC1="Caroline" NPC2="">
+    <Text>It's such a lovely evening out there! To the fourth floor, if you would.</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>What business do you have this late at night?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Caroline">
+    <Text>That's a bit of a personal question, isn't it, dear?</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Have you seen anything strange today?</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Caroline">
+    <Text>No, but I have felt a chill in the air tonight. Something's giving me shivers.</Text>
+    <Address>101 203 600</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>What kind of chill?</Text>
+    <Address>204 205</Address>
+  </Node>
+  <Node ID="204" Char="Caroline">
+    <Text>It... it's probably nothing.</Text>
+    <Address>101 600</Address>
+  </Node>
+  <Node ID="205" Char="Caroline">
+    <Text>I just can't describe it, I'm sorry. It's like something's coming tonight.</Text>
+    <Address>101 600</Address>
+    <Threshold>6</Threshold>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
+    <Text>Please stay safe, Steve. Have a good night.</Text>
+  </Node>
+</Root>

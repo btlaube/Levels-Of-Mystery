@@ -1,0 +1,55 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve" NPC1="James" NPC2="">
+    <Text>Good morning, Mr. James.</Text>
+    <Address>101 102</Address>
+  </Node>
+  <Node ID="101" Char="James">
+    <Text>Hello. First floor, please.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="102" Char="James">
+    <Text>Good morning, Mr. Devlin.</Text>
+    <Threshold>3</Threshold>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>Do you know anything about Mr. Lindson, the previous apartment owner?</Text>
+    <Address>104 106</Address>
+  </Node>
+  <Node ID="104" Char="James">
+    <Text>No, not really, I've just heard the rumors of foul play. </Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="James">
+    <Text>It looks like I should get going. Good day, Mr. Devlin.</Text>
+  </Node>
+  <Node ID="106" Char="James">
+    <Threshold>3</Threshold>
+    <Text>Just what everyone else has heard; however, I never knew the man to be depressed. There have been whispers that someone's trying to get at his profits.</Text>
+    <Address>107 110</Address>
+  </Node>
+  <Node ID="107" Char="Steve">
+    <Text>How would you have heard that? That's something most would try to keep hidden.</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="James">
+    <Text>I'm just repeating what others have said. There's no telling where the rumors came from.</Text>
+    <Address>109</Address>
+  </Node>
+  <Node ID="109" Char="James">
+    <Text>Now, thank you, but I must be off.</Text>
+  </Node>
+  <Node ID="110" Char="Steve">
+    <Text>Would you happen to know who began those rumors?</Text>
+    <Reputation>+1</Reputation>
+    <Address>111</Address>
+  </Node>
+  <Node ID="111" Char="James">
+    <Text>No, I'm afraid not. Living here, with eveyone so close together, you hear lots of things in passing. Of course, it also helps if you know how to rearrange some letters here and there...</Text>
+    <Address>109</Address>
+  </Node>
+</Root>

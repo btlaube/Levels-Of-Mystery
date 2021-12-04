@@ -1,0 +1,50 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Charles" NPC1="Steve" NPC2="">
+    <Text>Good morning! I'm headed to the lobby.</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>What are you up to today?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Charles">
+    <Text>I've always got more work around this place. There's never a day off. Today, I'm gonna repaint some windows, then there's the funeral arrangements...</Text>
+    <Address>103 201</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>How is Mrs. Lindson handling the loss?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Charles" ShowOnce="True">
+    <Text>She's not taking it well, but I can't blame her. I don't miss that man, but I do feel just awful for her. There's nothing worse than seeing your own child cry.</Text>
+    <Address>201 600</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Did you sleep at all last night?</Text>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="202" Char="Charles">
+    <Text>No, I didn't. Like I keep saying, there's always something new comin' up around here.</Text>
+    <Text>101 600</Text>
+  </Node>
+  <Node ID="203" Char="Charles">
+    <Text>No sir, I didn't, but I got something new to tell ya! There was a sickly sweet smell on some of the floors last night, and the smell ended right outside my door!</Text>
+    <Threshold>7</Threshold>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Charles">
+    <Text>Now, I don't know what it means, but I'm hopin' nothing. I don't need someone's perfume staining the carpets!</Text>
+    <Address>101 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Charles">
+    <Text>Y'know, I'm glad you started working here, sir. It's hard to find trustworthy men these days, especially those as curious as yourself. Take care of yourself, y'hear?</Text>
+  </Node>
+</Root>

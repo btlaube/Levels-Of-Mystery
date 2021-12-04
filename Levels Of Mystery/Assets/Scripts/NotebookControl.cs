@@ -184,7 +184,7 @@ public class NotebookControl : MonoBehaviour
         XPathDocument docNav;
         XPathNodeIterator NodeIter;
         string strExpression;
-        string path = "Assets\\Resources\\Discriptions.xml.txt";
+        string path = Application.dataPath + "/StreamingAssets/Discriptions.xml.txt";
 
         docNav = new XPathDocument(path);
         nav = docNav.CreateNavigator();

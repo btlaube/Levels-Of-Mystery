@@ -1,0 +1,60 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve" NPC1="Alex" NPC2="James">
+    <Text>Good afternoon. Are you both going somewhere together?</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>(listen to Alex)</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Alex">
+    <Text>No... no... it can't be! It doesn't make any sense... what? Oh, yes, first floor.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="James">
+    <Text>She's been like this all morning. I don't know who she's talking about or what she means.</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Steve">
+    <Text>What's wrong? What have you found?</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Alex">
+    <Text>I can't say for sure yet. I have to make sure of my theory before I report it!</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="James">
+    <Text>I don't know, she sounds pretty suspicious. Maybe we shouldn't trust her...</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="Alex">
+    <Text>Whatever, I need to get going! There's no time to explain!</Text>
+  </Node>
+  <Node ID="201" Char="Steve">
+    <Text>(listen to James)</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="James">
+    <Text>We're going to the lobby, but I truly think Alex needs to get back to her room! She hasn't been well this morning. I keep telling her to calm down...</Text>
+    <Address>203</Address>
+  </Node>
+  <Node ID="203" Char="Alex">
+    <Text>No, what you keep telling me is to drink some strange remedy you made! I have to finish my research, I'm so close to finalizing my theory!</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Steve">
+    <Text>I agree with James, you don't look well. Why not take a rest? Pushing yourself will only harm you.</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="Alex">
+    <Text>No, I promise, I'm fine! I'm going to finish this one way or another. Please let me finish my report!</Text>
+    <Address>206</Address>
+  </Node>
+  <Node ID="206" Char="Alex">
+    <Text>I'm going now. Next time I see you, this will all be solved!</Text>
+  </Node>
+</Root>

@@ -1,0 +1,47 @@
+<Suspects>
+
+
+	<Person Id="0">
+
+		A kind old woman who has a strange connection with flowers. She seems to have a past riddled with loss and grief... is it motive enough for murder?
+
+	</Person>
+
+	<Person Id="1">
+
+		She is cold, calculating, and a true believer in socioeconomic segregation. She enjoys the finer things in life and would do nearly anything to protect her status and public image.
+
+	</Person>
+
+	<Person Id="2">
+
+		Since a falling-out some years ago, James's family has viewed him as a failure. This caused him to retreat to insanity, and he is now a firm believer in the occult. At what point do his delusions meet reality?
+
+	</Person>
+
+	<Person Id="3">
+
+		The handyman of the apartment complex and father of Mrs. Lindson, Charles is always busy with something. He doesn't seem particularly troubled with the recent events, but there could be more to him beneath the surface.
+
+	</Person>
+
+	<Person Id="4">
+
+		Articles on propaganda propelled this ambitious young journalist to the top. She's known for embellishing the truth. After all, what good story isn't worth a little risk?
+
+	</Person>
+
+	<Person Id="5">
+
+		An overly enthusiastic young woman. She feels very strongly about certain things, such as the past and suspicious behaviors; though beneficial, her emotions sometimes get the best of her. Perhaps her optimism is an overcompensation for something else?
+
+	</Person>
+
+	<Person Id="6">
+
+		A young, quiet man who seems to have been severely impacted by a recent war. He lives in a constant state of guilt, though one cannot be certain if it is genuine or if it is a ruse. He only communicates with those closest to him.
+
+	</Person>
+
+
+</Suspects>

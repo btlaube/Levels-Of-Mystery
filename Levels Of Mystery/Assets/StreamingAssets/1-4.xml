@@ -1,0 +1,58 @@
+﻿<Root>
+  <Node ID="0">
+    Used for start point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Charles" NPC1="Charles" NPC2="">
+    <Text>To the roof, if you would.</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>We haven't met yet. Who are you?</Text>
+    <Address>102</Address>
+  </Node>
+  <Node ID="102" Char="Charles">
+    <Text>I'm Charles, the groundskeeper here. My daughter is Mr. Lindson's wife... er, was, I guess.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Steve">
+    <Text>What are your thoughts on Mr. Lindson's death?</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="Charles">
+    <Text>Boy, you may want to be a tad less blunt with your questioning. Ah well, I guess it doesn't matter either way.The man was a true entrepreneur, but I can't say he was the best husband.</Text>
+    <Reputation>+2</Reputation>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Steve">
+    <Text>How so?</Text>
+    <Address>106</Address>
+  </Node>
+  <Node ID="106" Char="Charles">
+    <Text>My daughter told me he was quick to anger, especially with matters concerning money. He always had to be in control.</Text>
+    <Address>600 201</Address>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Why are you going to the roof?</Text>
+    <Address>202</Address>
+  </Node>
+  <Node ID="202" Char="Charles">
+    <Text>I've gotta fix the shingles. Something's always going wrong around here.</Text>
+    <Address>203</Address>
+  </Node>
+  <Node ID="203" Char="Steve">
+    <Text>You sound frustrated.</Text>
+    <Address>204</Address>
+  </Node>
+  <Node ID="204" Char="Charles" ShowOnce="True">
+    <Text>Of course I am! My son-in-law never put in a day of work in his life! He did the bare minimum and left the rest to me. Now I'm stuck with it.</Text>
+    <Address>600 101</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Charles">
+    <Text>It's been nice chatting with ya. Have a good night.</Text>
+  </Node>
+</Root>

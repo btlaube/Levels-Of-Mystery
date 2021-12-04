@@ -1,0 +1,77 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Caroline" NPC1="Caroline" NPC2="">
+    <Text>Good morning. First floor, please.</Text>
+    <Address>101 201 301</Address>
+  </Node>
+  <Node ID="101" Char="Steve" ShowOnce="True">
+    <Text>Where are you headed today?</Text>
+    <Address>102 103</Address>
+  </Node>
+  <Node ID="102" Char="Caroline">
+    <Text>I know you're questioning everyone, but to be honest, it's getting a bit tiring, dear. Where I'm going is my business only.</Text>
+    <Address>201 301 600</Address>
+  </Node>
+  <Node ID="103" Char="Caroline">
+    <Text>I'm going to the florist's. I'm hoping they have something I need.</Text>
+    <Address>201 301 600</Address>
+    <Threshold>7</Threshold>
+  </Node>
+  <Node ID="201" Char="Steve" ShowOnce="True">
+    <Text>Do you have any enemies in the apartment complex?</Text>
+    <Address>202 203</Address>
+  </Node>
+  <Node ID="202" Char="Caroline">
+    <Text>A-As far as I know, n-no, I currently don't. I wish to keep it that way.</Text>
+    <Address>101 301 600</Address>
+  </Node>
+  <Node ID="203" Char="Caroline">
+    <Text>N-no, I certainly hope not! I try to be kind to everyone here. That Mr. Lindson, though... he held quite a reputation. Not necessarily positive, mind you.</Text>
+    <Threshold>5</Threshold>
+    <Address>204 600</Address>
+  </Node>
+  <Node ID="204" Char="Steve">
+    <Text>How do you mean?</Text>
+    <Address>205 206</Address>
+  </Node>
+  <Node ID="205" Char="Caroline">
+    <Text>I-I... didn't mean anything by it. I liked him well enough, as you know. Others didn't feel the same.</Text>
+    <Address>101 301 600</Address>
+  </Node>
+  <Node ID="206" Char="Caroline">
+    <Text>Mr. Lindson owned a number of strange business ventures. Not only was he an entrepreneur, he never seemed to care about risks taken at the expense of others.</Text>
+    <Threshold>7</Threshold>
+    <Address>207</Address>
+  </Node>
+  <Node ID="207" Char="Caroline">
+    <Text>I suppose what I mean to say is that the man was eccentric. Fine in moderation, but when you fly too high, the fall becomes much more painful.</Text>
+    <Hint>Caroline seems to have a hidden history with Mr. Lindson.</Hint>
+    <Address>101 301 600</Address>
+  </Node>
+  <Node ID="301" Char="Steve" ShowOnce="True">
+    <Text>Your stutter is gone. You seem more composed since I last saw you.</Text>
+    <Address>302</Address>
+  </Node>
+  <Node ID="302" Char="Caroline">
+    <Text>Do I? I hardly know what you're talking about. I assure you I've been fine.</Text>
+    <Address>101 201 600</Address>
+  </Node>
+  <Node ID="600" Char="Steve">
+    <Text>(end conversation)</Text>
+    <Address>601 602</Address>
+  </Node>
+  <Node ID="601" Char="Caroline">
+    <Text>Have a good day, operator.</Text>
+  </Node>
+  <Node ID="602" Char="Caroline">
+    <Text>Thank you for talking to me, Steve. With all that's going on around here, it is very comforting.</Text>
+    <Threshold>6</Threshold>
+    <Address>603</Address>
+  </Node>
+  <Node ID="603" Char="Caroline">
+    <Text>However, as a word of warning... be more careful with your interrogations. Some may not take them as kindly as I have. We don't need more blood spilled within these walls.</Text>
+  </Node>
+</Root>

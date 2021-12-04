@@ -1,0 +1,49 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="Steve" NPC1="Alex" NPC2="">
+    <Text>Morning, Ms. Alex.</Text>
+    <Address>101 201</Address>
+  </Node>
+  <Node ID="101" Char="Alex">
+    <Text>Well, it's a bit hard to say "good morning" today, considering the rough patch of events as of late. Floor two, please.</Text>
+    <Address>102 104</Address>
+  </Node>
+  <Node ID="102" Char="Steve">
+    <Text>Indeed it is. After losing the owner and now Charles, things seem rather dire.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="Alex">
+    <Text>I completely agree. I'll be off to my room now, good day.</Text>
+  </Node>
+  <Node ID="104" Char="Steve">
+    <Text>We can only keep moving forward. With any luck, these unfortunate events will end soon.</Text>
+    <Reputation>+1</Reputation>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="Alex">
+    <Text>I'm not so sure about that. I don't think these are simply "unfortunate events", they're carefully executed by a villain of some kind. But what do they want?</Text>
+    <Hint>Alex is confident that the deaths are murders, not suicides.</Hint>
+    <Address>106 107</Address>
+  </Node>
+  <Node ID="106" Char="Steve">
+    <Reputation>-1</Reputation>
+    <Text>You're not a detective, you're a reporter. Be careful what you say - you could endanger yourself if you look for answers.</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="107" Char="Steve">
+    <Text>You may be right, but please don't seek out danger.</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="Alex">
+    <Text>I hear what you're saying, and I will continue to think about it. You be careful as well, Mr. Devlin.</Text>
+    <Hint>Is her message benign or is it a threat?</Hint>
+  </Node>
+  <Node ID="201" Char="Alex">
+    <Threshold>2</Threshold>
+    <Text>I was hoping I was wrong, but after Charles's death, I can't deny it anymore. There's a calculated pattern here.</Text>
+    <Address>104</Address>
+  </Node>
+</Root>

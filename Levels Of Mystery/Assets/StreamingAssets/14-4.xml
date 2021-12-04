@@ -1,0 +1,55 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="James" NPC1="James" NPC2="">
+    <Text>Good evening, Mr. Devlin. I'm going to the third floor.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>Have you picked up any more clues?</Text>
+    <Address>102 201</Address>
+  </Node>
+  <Node ID="102" Char="James">
+    <Text>To be honest, Mr. Devlin, I am uncertain of your intentions.</Text>
+    <Address>103</Address>
+  </Node>
+  <Node ID="103" Char="James">
+    <Text>Sometimes it seems that you genuinely wish to help, yet you may still seek to sabotage.</Text>
+    <Address>104</Address>
+  </Node>
+  <Node ID="104" Char="James">
+    <Text>You cannot be trusted. I will not place any more lives at stake.</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="James">
+    <Text>...Perhaps you are a viper, too.</Text>
+  </Node>
+  <Node ID="201" Char="James">
+    <Threshold>7</Threshold>
+    <Text>You must promise not to tell anyone.</Text>
+    <Address>202 204</Address>
+  </Node>
+  <Node ID="202" Char="Steve">
+    <Text>Depending on what you say, I may have to tell the police.</Text>
+    <Reputation>-1</Reputation>
+    <Address>203</Address>
+  </Node>
+  <Node ID="203" Char="James">
+    <Text>Then I'm afraid I have nothing to share. Good night, Mr. Devlin.</Text>
+  </Node>
+  <Node ID="204" Char="Steve">
+    <Reputation>+2</Reputation>
+    <Text>Yes, I promise.</Text>
+    <Address>205</Address>
+  </Node>
+  <Node ID="205" Char="James">
+    <Text>I cannot give you names, but I can say this: the viper is cold and cunning. She is blinded by golden greed, and it may be her downfall.</Text>
+    <Address>206</Address>
+    <Hint>According to James, the killer "viper" is someone who is calculating and greedy.</Hint>
+  </Node>
+  <Node ID="206" Char="James">
+    <Text>I have said too much! I'll now be off.</Text>
+  </Node>
+</Root>

@@ -1,0 +1,52 @@
+<Root>
+  <Node ID="0">
+    starting point
+    <Address>100</Address>
+  </Node>
+  <Node ID="100" Char="James" NPC1="James" NPC2="">
+    <Text>To the basement, please. Posthaste.</Text>
+    <Address>101</Address>
+  </Node>
+  <Node ID="101" Char="Steve">
+    <Text>The basement? For what?</Text>
+    <Address>102 203</Address>
+  </Node>
+  <Node ID="102" Char="James">
+    <Text>It's too late now to explain. Good luck, Mr. Devlin! If you are not a viper, then I wish you the best.</Text>
+    <Hint>James is fleeing to the basement, so he will not be present tonight. He can't be the killer.</Hint>
+  </Node>
+  <Node ID="103" Char="James">
+    <Threshold>8</Threshold>
+    <Text>Ten days ago, the bear died. Five days ago, the eagle fell from her perch. Today, it will be the lamb. And so the fox flees to remain safe.</Text>
+    <Address>104 106</Address>
+  </Node>
+  <Node ID="104" Char="Steve">
+    <Text>Who is the lamb?</Text>
+    <Address>105</Address>
+  </Node>
+  <Node ID="105" Char="James">
+    <Text>The one with the white roses! The other woman, the viper, is going to strike her tonight!</Text>
+    <Hint>Caroline is the lamb, so she cannot be the killer. Which other woman is the viper?</Hint>
+    <Address>600</Address>
+  </Node>
+  <Node ID="106" Char="Steve">
+    <Text>Who is the viper?</Text>
+    <Address>107</Address>
+  </Node>
+  <Node ID="107" Char="James">
+    <Text>You still don't know? It is she with the gleam of gold in her eye, the poison-brewer, flower lover, and murderer!</Text>
+    <Address>108</Address>
+  </Node>
+  <Node ID="108" Char="James">
+    <Text>The nightshade will strangle the white rose!</Text>
+    <Hint>James believes that someone symbolized by purple will kill someone symbolized by white roses.</Hint>
+    <Address>600</Address>
+  </Node>
+  <Node ID="600" Char="James">
+    <Text>Now, I really must go, before it's too late! Good luck, Mr. Devlin!</Text>
+    <Address>601</Address>
+  </Node>
+  <Node ID="601" Char="Steve">
+    <Text>And to you, Mr. James.</Text>
+  </Node>
+</Root>
