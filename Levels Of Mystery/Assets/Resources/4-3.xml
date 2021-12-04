@@ -3,7 +3,7 @@
     Starting point
     <Address>100</Address>
   </Node>
-  <Node ID="100" Char="Caroline">
+  <Node ID="100" Char="Caroline" NPC1="Caroline" NPC2="">
     <Text>What a nice evening! To the fourth floor, if you would.</Text>
     <Address>101</Address>
   </Node>
@@ -50,7 +50,7 @@
     <Reputation>+1</Reputation>
     <Address>201 301 600</Address>
   </Node>
-  <Node ID="201" Char="Steve" ShowOnce=True>
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>What are your thoughts on Alex?</Text>
     <Address>202</Address>
   </Node>

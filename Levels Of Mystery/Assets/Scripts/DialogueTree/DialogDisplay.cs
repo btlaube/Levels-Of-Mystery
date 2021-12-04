@@ -16,7 +16,8 @@ public class DialogDisplay : MonoBehaviour
     public string Path = "";
 
     public Player player;
-    public Image image;
+    public Image NPC1;
+    public Image NPC2;
 
     void Start()
     {
@@ -27,10 +28,10 @@ public class DialogDisplay : MonoBehaviour
 
     public void getPath()
     {
-        if (player.day == 10) //arbitrary
-        {
-            Tree = null; //will cause error, only for testing
-        }
+        //if (player.day == 10) //arbitrary
+        //{
+        //    Tree = null; //will cause error, only for testing
+        //}
         Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
         //Debug.Log(Path);
         Tree.LoadDialogue(Path);
@@ -58,7 +59,8 @@ public class DialogDisplay : MonoBehaviour
             control.text = "↓ Enter";
         }
         //npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
-        image.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);
+        NPC1.sprite = Resources.Load<Sprite>(Tree.NPC1PNGPath);
+        NPC2.sprite = Resources.Load<Sprite>(Tree.NPC2PNGPath);
         //image.SetNativeSize();
         if (Tree.Character == "Steve")
         {

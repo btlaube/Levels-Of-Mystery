@@ -7,32 +7,19 @@ public class CutsceneScript : MonoBehaviour
 {
     public Animator animator;
     public Text textElement;
-    private bool fullText = false;
-    private int index = 0;
+    public bool fullText = false;
+    public int index = 0;
     public Player player;
 
-    public string[] texts = {
-                        "The year is 1920, and a particularly harsh winter has hit the city of New York in the United States."
-                        + "\nSteven Devlin, a retired police officer, had recently taken a job at the opulent Countryshire Apartments as an elevator operator."
-                        + "\nA few days later, the owner of the apartment complex, Mr. Lindson, mysteriously died. The police were quick to rule the death as a suicide; however, certain evidence points to the possibility of foul play."
-                        + "\nWhat was the true cause of Mr. Lindson’s death? Is a sinister villain hiding among the innocent residents of the apartment complex? It’s up to you to find out…"
-                        + "\nTry to solve the case, but be warned: the truth may be steeped in LEVELS OF MYSTERY.", 
-                        "Last night, long after the last resident had left the elevator, a tragedy occured. Charles,"
-                        + "the groundskeeper of the apartment complex and the father of Mrs. Lindson, died in his sleep."
-                        + "The coroner examined the body and determined the death was not a suicide, but that Charles had been" 
-                        + "poisoned sometime in the preceding 48 hours." 
-                        + "\nThere are six remaining suspects in the apartment complex. Who knows when the killer will strike next?",
-                        "Alex, the reporter, was found dead last night in her room, with a writing quill in her hand."
-                        + "It looked as if there had been a minimal struggle before her death. A spilled vial of ink stained a paper"
-                        + "on the desk, possibly hiding whatever progress she had made towards uncovering the killer."
-                        + "It looks like the reporter’s greatest story was that of her own demise. Now that only five suspects"
-                        + "remain, there’s no telling what will happen next."
-    };
+    public string[] texts;
 
-    public void Start() {
-        //if (player.day == 1 && player.time == 1){
-        //    ShowText();
-        //}
+    public GameObject alexButton;
+    public GameObject alexX;
+
+    public void OnEnable() {
+        if (player.day == 1 && player.time == 1) {
+            index = 0;
+        }
         ShowText();
     }
 
@@ -43,7 +30,7 @@ public class CutsceneScript : MonoBehaviour
             fullText = true;
         }
         else if (Input.GetKeyUp("return")) {
-            HideSelf();
+            FadeOut();
         }
         if (fullText) {
             GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
@@ -54,6 +41,10 @@ public class CutsceneScript : MonoBehaviour
         StopAllCoroutines();
         GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
         StartCoroutine(TypeDialogue(texts[index]));
+        if (index == 2) {
+            alexX.SetActive(true);
+            alexButton.GetComponent<Button>().interactable = false;
+        }
     }
 
     IEnumerator TypeDialogue(string text) {
@@ -67,8 +58,15 @@ public class CutsceneScript : MonoBehaviour
         GameObject.Find("AudioManager").GetComponent<AudioManager>().Stop("Dialogue");
     }
 
-    public void HideSelf() {
+    public void FadeOut() {        
         animator.SetTrigger("FadeOut");
+        GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ContinueGame();
         index++;
+    }
+
+    public void HideSelf() {
+        gameObject.SetActive(false);
+        textElement.text = "";
+        fullText = false;
     }
 }

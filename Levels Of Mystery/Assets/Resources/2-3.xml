@@ -3,7 +3,7 @@
     starting point
     <Address>100</Address>
   </Node>
-  <Node ID="100" Char="Stranger">
+  <Node ID="100" Char="Stranger" NPC1="Stranger" NPC2="">
     <Text>To the lobby. So, you must be the new guy. The one hired by the boss - oh, sorry, I mean ex-boss.</Text>
     <Address>101</Address>
   </Node>

@@ -3,7 +3,7 @@
     Starting Node. Just points to other nodes for starting text
     <Address>100</Address>
   </Node>
-  <Node ID="100" Char="Caroline">
+  <Node ID="100" Char="Caroline" NPC1="Caroline" NPC2="">
     <Text>Good morning. First floor, please.</Text>
     <Address>101 201</Address>
   </Node>

@@ -7,6 +7,7 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
+    public Player player;
 
     public static LevelLoader instance;
 
@@ -23,9 +24,9 @@ public class LevelLoader : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void LoadNextLevel() {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-    }
+    //public void LoadNextLevel() {
+    //    StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    //}
 
     public void LoadGameScene() {
         StartCoroutine(LoadLevel(1));
@@ -35,6 +36,16 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(0));
     }
 
+    public void NewGame() {
+        player.ResetPlayer();
+        
+        StartCoroutine(LoadLevel(1));
+    }
+
+    public void ContinueGame() {
+        StartCoroutine(LoadLevel(1));
+    }
+
     IEnumerator LoadLevel(int levelIndex) {
         transition.SetTrigger("Start");
 
@@ -42,7 +53,13 @@ public class LevelLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelIndex);
         if (levelIndex == 1) {
-            GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().LoadGameScene();
+            if (player.day == 1 && player.time == 1){
+                GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().NewGame();
+            }
+            else {
+                GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ContinueGame();
+            }
+            //GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().LoadGameScene();
         }
         else if (levelIndex == 0) {
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().LoadMainMenu();
