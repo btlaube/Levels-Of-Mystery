@@ -51,28 +51,34 @@ public class NotebookControl : MonoBehaviour
             CharacterName.text = "Caroline";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Caroline");
-
-            int a = 0;
-            foreach (string hint in player.hints["Caroline"])
+            if(player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["Caroline"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
+          
         }
         if (i == 1)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "The Heiress";
+            CharacterName.text = "Virginia";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Virginia");
 
-            int a = 0;
-            foreach (string hint in player.hints["Virginia"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["Virginia"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
         if (i == 2)
@@ -82,12 +88,15 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\James");
 
-            int a = 0;
-            foreach (string hint in player.hints["James"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["James"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
         if (i == 3)
@@ -97,42 +106,51 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Charles");
 
-            int a = 0;
-            foreach (string hint in player.hints["Charles"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["Charles"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
         if (i == 4)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "Yellow Journalist";
+            CharacterName.text = "Alex";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\AlexTemp");
 
-            int a = 0;
-            foreach (string hint in player.hints["Alex"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["Alex"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
         if (i == 5)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "War Bride";
+            CharacterName.text = "Lucy";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Lucy");
 
-            int a = 0;
-            foreach (string hint in player.hints["lucy"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["lucy"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
         if (i == 6)
@@ -142,12 +160,15 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\BillMurray");
 
-            int a = 0;
-            foreach (string hint in player.hints["Thomas"])
+            if (player.hints["Caroline"] != null)
             {
-                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
-                HintSpot.text = hint;
-                a++;
+                int a = 0;
+                foreach (string hint in player.hints["Thomas"])
+                {
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    HintSpot.text = hint;
+                    a++;
+                }
             }
         }
 
