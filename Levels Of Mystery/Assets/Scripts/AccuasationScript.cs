@@ -59,7 +59,7 @@ public class AccuasationScript : MonoBehaviour
     }
 
     void Update() {
-        if (numAccuasations == 0) {
+        if (numAccuasations == 0 && !win.activeSelf) {
             lose.SetActive(true);
         }
     }

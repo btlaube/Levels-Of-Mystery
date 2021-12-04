@@ -20,7 +20,7 @@ public class EndDayScript : MonoBehaviour
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowAccuasation();
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowAccuasationButton();
         }
-        if ((player.day == 6 && player.time == 1) || (player.day == 11 && player.time == 1) || (player.day == 15 && player.time == 1)) {
+        if ((player.day == 6 && player.time == 1) || (player.day == 11 && player.time == 1)) {
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().Cutscene();
         }
     }

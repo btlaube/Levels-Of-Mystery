@@ -48,7 +48,10 @@ public class Dialogue
         {
            string character = CurrentNode.Attributes["Char"].Value;
            string hint = CurrentNode["Hint"].InnerText;
-           player.AddHint(character, hint);
+           Debug.Log(character);
+           Debug.Log(hint);
+           GameObject.Find("Player").GetComponent<Player>().AddHint(character, hint);
+           //player.AddHint(character, hint);
         }
         else
         {
@@ -92,7 +95,9 @@ public class Dialogue
                 NPC2PNGPath = "CharacterSprites\\" + node.Attributes["NPC2"].Value;
             }  
         }
-        
+        Debug.Log(NPC1PNGPath);
+        Debug.Log(NPC2PNGPath);
+        //if (NPC1PNGPath == "None")
 
         //Debug.Log("npc1:");
         //Debug.Log("CharacterSprites\\" + node["NPC1"].InnerText);
@@ -141,11 +146,6 @@ public class Dialogue
             {
                 XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']/Text");
                 Debug.Log(CurrentNode.Attributes["ID"].Value);
-                //if (CurrentNode.Attributes["ID"].Value == "0") {
-                //    Debug.Log("update character");
-                //    Debug.Log(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
-                //    //updateCharacter(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
-                //}
                 updateCharacter(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
                 options.Add(address, next.InnerText);
             }

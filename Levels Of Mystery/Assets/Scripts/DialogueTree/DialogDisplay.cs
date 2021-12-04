@@ -32,6 +32,9 @@ public class DialogDisplay : MonoBehaviour
         //{
         //    Tree = null; //will cause error, only for testing
         //}
+        //if (player.day == 16) {
+        //    this.enabled = false;
+        //}
         Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
         //Debug.Log(Path);
         Tree.LoadDialogue(Path);

@@ -364,6 +364,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1745101418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3610953399118862, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+  m_PrefabInstance: {fileID: 2304756080177055176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1819343994
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +483,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54d8119872b5844c9600146bd0b6fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1915001459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1952523050441329230, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+  m_PrefabInstance: {fileID: 2304756080177055176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1915001461 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6035629369023845981, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+  m_PrefabInstance: {fileID: 2304756080177055176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1915001462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915001459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c82a1d75d20a224dab7338c21f42f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1915001461}
+  textElement: {fileID: 1745101418}
+  fullText: 0
+  texts:
+  - 'You accused too many people and Virginia got tired of all your snooping. Seeing
+    you as a threat to her plan she takes you out.  In the end, Virginia murdered
+    Caroline, Charles, Alex and you, Steve Devlin. She quickly fled the apartment
+    complex and managed to escape via a train, and she was never heard from again. 
+    Weeks later, it would come out that she sought the accumulated assets of Mr.
+    Lindson. Her own family business had failed, and so she sought new income to
+    support her expensive lifestyle. Fueled by greed, she even stole the funds from
+    his vault before fleeing the city.  The residents she killed, including Steve
+    Devlin, are kept alive in memory. '
+  - 'In the end, Virginia murdered Caroline, Charles, Alex and you, Steve Devlin.
+    She quickly fled the apartment complex and managed to escape via a train, and
+    she was never heard from again.  Weeks later, it would come out that she sought
+    the accumulated assets of Mr. Lindson. Her own family business had failed, and
+    so she sought new income to support her expensive lifestyle. Fueled by greed,
+    she even stole the funds from his vault before fleeing the city.  The residents
+    she killed, including Steve Devlin, are kept alive in memory. '
 --- !u!1 &1981408415
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +781,7 @@ PrefabInstance:
       objectReference: {fileID: 461974904}
     - target: {fileID: 2118378459048581461, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: texts.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2118378459048581461, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: texts.Array.data[4]
@@ -862,6 +915,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2304756081278799965, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 491226709}
     - target: {fileID: 2304756081395712940, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1126,11 +1183,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 8280949284045428542, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 491226709}
     - target: {fileID: 9007745420033150001, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4028069463137452134, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e4560a2a21c32e4685ff24c313d2b4f, type: 3}
 --- !u!1001 &4098174167213195944
 PrefabInstance:

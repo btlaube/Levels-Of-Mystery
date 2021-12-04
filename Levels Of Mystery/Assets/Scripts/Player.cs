@@ -40,13 +40,28 @@ public class Player : MonoBehaviour
         this.numAccuasations = 3;
     }
 
-    public void AddHint(string character, string hint) {
-        this.hints[character].Add(hint);
+    public void AddHint(string character, string hint)
+    {
+        List<string> val;
+        if (this.hints.TryGetValue(character, out val))
+        {
+            this.hints[character].Add(hint);
+        }
+        else
+        {
+            List<string> tempList = new List<string>(){hint};
+            this.hints.Add(character, tempList);
+        }
     }
 
     public void UpdateDay() {
         day++;
-        GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
+        if (this.day == 16) {
+            GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndGame();
+        }
+        else {
+            GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
+        }
     }
 
     public void UpdateTime() {

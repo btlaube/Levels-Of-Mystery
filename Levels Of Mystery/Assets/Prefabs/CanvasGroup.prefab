@@ -1124,6 +1124,13 @@ MonoBehaviour:
     support her expensive lifestyle. Fueled by greed, she even stole the funds from
     his vault before fleeing the city.  The residents she killed, including Steve
     Devlin, are kept alive in memory. '
+  - 'In the end, Virginia murdered Caroline, Charles, Alex and you, Steve Devlin.
+    She quickly fled the apartment complex and managed to escape via a train, and
+    she was never heard from again.  Weeks later, it would come out that she sought
+    the accumulated assets of Mr. Lindson. Her own family business had failed, and
+    so she sought new income to support her expensive lifestyle. Fueled by greed,
+    she even stole the funds from his vault before fleeing the city.  The residents
+    she killed, including Steve Devlin, are kept alive in memory. '
   alexButton: {fileID: 0}
   alexX: {fileID: 0}
 --- !u!95 &6035629369023845981
@@ -6188,6 +6195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1076f52d6d869b84b8346f5c928010f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   numAccuasations: 3
   accuasationText: {fileID: 5618036109571686984}
   virginiaButton: {fileID: 2548027120712856170}

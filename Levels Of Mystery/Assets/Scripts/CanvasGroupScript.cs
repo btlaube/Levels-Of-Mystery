@@ -101,4 +101,19 @@ public class CanvasGroupScript : MonoBehaviour
         transform.GetChild(8).gameObject.SetActive(false);
     }
 
+    public void EndGame() {
+        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(1).gameObject.SetActive(false);
+        transform.GetChild(2).gameObject.SetActive(false);
+        transform.GetChild(3).gameObject.SetActive(false);
+        transform.GetChild(4).gameObject.SetActive(false);
+        transform.GetChild(5).gameObject.SetActive(false);
+        transform.GetChild(6).gameObject.SetActive(false);
+        transform.GetChild(7).gameObject.SetActive(false);
+        transform.GetChild(8).gameObject.SetActive(false);
+        transform.GetChild(9).gameObject.SetActive(false);
+        transform.GetChild(10).gameObject.SetActive(true);
+        transform.GetChild(10).gameObject.GetComponent<LoseScript>().ShowText(1);
+    }
+
 }
