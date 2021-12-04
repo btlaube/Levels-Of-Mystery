@@ -11,7 +11,8 @@ public class Dialogue
     public XmlDocument Doc = new XmlDocument();
     public XmlNode CurrentNode;
     public string Character = "None";
-    public string CharacterPNGPath = "None";
+    public string NPC1PNGPath = "None";
+    public string NPC2PNGPath = "None";
     public Player player; 
 
     public void LoadDialogue(string path)
@@ -56,55 +57,61 @@ public class Dialogue
 
     private void updateCharacter(XmlNode node)
     {
-        Debug.Log("update character called");
-        if (node != null) {
-            //Debug.Log("node is not null");
+
+        NPC1PNGPath = "CharacterSprites\\" + node.Attributes["NPC1"].Value;
+        if (node.Attributes["NPC2"].Value == "") {
+            NPC2PNGPath = "CharacterSprites\\Transparent";
         }
         else {
-            //Debug.Log("node is null");
-        }
-        //Debug.Log(node.Attributes["ID"].Value);
-        Debug.Log(node.Attributes["ID"].Value);
-        try
-        {
-            if (Character == node.Attributes["Char"].Value) { return; }
-            Character = node.Attributes["Char"].Value;
-            //Debug.Log($"char name: {Character}");
-        }
-        catch (NullReferenceException) { Debug.Log("character not found"); }
+            NPC2PNGPath = "CharacterSprites\\" + node.Attributes["NPC2"].Value;
+        }        
 
-        switch (Character)
-        {
-            case "Player Character":
-                break;
-            case "Caroline":
-                CharacterPNGPath = "CharacterSprites\\Caroline";
-                break;
-            case "Charles":
-                CharacterPNGPath = "CharacterSprites\\Charles";
-                break;
-            case "Virginia":
-                CharacterPNGPath = "CharacterSprites\\VirginiaTemp";
-                break;
-            case "Lucy":
-                CharacterPNGPath = "CharacterSprites\\Lucy";
-                break;
-            case "Thomas":
-                CharacterPNGPath = "CharacterSprites\\Thomas";
-                break;
-            case "James":
-                CharacterPNGPath = "CharacterSprites\\James";
-                break;
-            case "Alex":
-                CharacterPNGPath = "CharacterSprites\\AlexTemp";
-                break;
-            case "Stranger":
-                CharacterPNGPath = "CharacterSprites\\Stranger";
-                break;
-            default:
-                Debug.Log("No character. Found Speaking.");
-                break;
-        }
+        //if (node != null) {
+        //    Debug.Log("node is not null");
+        //}
+        //else {
+        //    Debug.Log("node is null");
+        //}
+        //try
+        //{
+        //    if (Character == node.Attributes["Char"].Value) { return; }
+        //    Character = node.Attributes["Char"].Value;
+        //    //temp = Character;
+        //}
+        //catch (NullReferenceException) { Debug.Log("character not found"); }
+        //
+        //switch (Character)
+        //{
+        //    case "Player Character":
+        //        break;
+        //    case "Caroline":
+        //        NPC1PNGPath = "CharacterSprites\\Caroline";
+        //        break;
+        //    case "Charles":
+        //        NPC1PNGPath = "CharacterSprites\\Charles";
+        //        break;
+        //    case "Virginia":
+        //        NPC1PNGPath = "CharacterSprites\\VirginiaTemp";
+        //        break;
+        //    case "Lucy":
+        //        NPC1PNGPath = "CharacterSprites\\Lucy";
+        //        break;
+        //    case "Thomas":
+        //        NPC1PNGPath = "CharacterSprites\\Thomas";
+        //        break;
+        //    case "James":
+        //        NPC1PNGPath = "CharacterSprites\\James";
+        //        break;
+        //    case "Alex":
+        //        NPC1PNGPath = "CharacterSprites\\AlexTemp";
+        //        break;
+        //    case "Stranger":
+        //        NPC1PNGPath = "CharacterSprites\\Stranger";
+        //        break;
+        //    default:
+        //        Debug.Log("No character. Found Speaking.");
+        //        break;
+        //}
     }
 
     public Dictionary<string, string> GetNext(string id)

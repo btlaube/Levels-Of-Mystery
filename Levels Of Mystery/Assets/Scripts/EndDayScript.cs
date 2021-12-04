@@ -15,6 +15,7 @@ public class EndDayScript : MonoBehaviour
     public void UpdateDay() {
         day.text = "Beginning day " + player.day.ToString() + "...";
         GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowNotebook();
+        GameObject.Find("CanvasGroup").GetComponent<NotebookControl>().LoadNotebook();
         if (player.day == 6) {
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowAccuasation();
             GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().ShowAccuasationButton();

@@ -16,7 +16,8 @@ public class DialogDisplay : MonoBehaviour
     public string Path = "";
 
     public Player player;
-    public Image image;
+    public Image NPC1;
+    public Image NPC2;
 
     void Start()
     {
@@ -58,7 +59,8 @@ public class DialogDisplay : MonoBehaviour
             control.text = "↓ Enter";
         }
         //npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
-        image.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);
+        NPC1.sprite = Resources.Load<Sprite>(Tree.NPC1PNGPath);
+        NPC2.sprite = Resources.Load<Sprite>(Tree.NPC2PNGPath);
         //image.SetNativeSize();
         if (Tree.Character == "Steve")
         {

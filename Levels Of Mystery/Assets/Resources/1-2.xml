@@ -2,7 +2,7 @@
 	<Node ID="0">
 		<Address>100</Address>
 		</Node>
-	<Node ID="100" Char="Virginia">
+	<Node ID="100" Char="Virginia" NPC1="" NPC2="">
 		<Text>Morning. Get me to the first floor.</Text>
 		<Address>101 201 301</Address>
 	</Node>
@@ -31,7 +31,7 @@
 		<Text>...You may want to watch what you say. If anything, it was the lazy employees that caused our closing.</Text>
 		<Address>115</Address>
 	</Node>
-	<Node ID="115" Char="Virginia"
+	<Node> ID="115" Char="Virginia"
 	      <Text>Hm, it doesn't matter. This is my floor; goodbye.</Text>
 	</Node>
 	<Node ID="121" Char="Steve">
