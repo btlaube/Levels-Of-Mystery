@@ -38,7 +38,9 @@ public class Dialogue
     {
         if (CurrentNode["Hint"]?.InnerText != null)
         {
-           
+           string character = CurrentNode.Attributes["Char"].Value;
+           string hint = CurrentNode["Hint"].InnerText;
+           player.AddHint(character, hint);
         }
         else
         {
