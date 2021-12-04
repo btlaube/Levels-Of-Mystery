@@ -2,7 +2,7 @@
 	<Node ID="0">
 		<Address>100</Address>
 		</Node>
-	<Node ID="100" Char="Virginia" NPC1="" NPC2="">
+	<Node ID="100" Char="Virginia" NPC1="Virginia" NPC2="">
 		<Text>Morning. Get me to the first floor.</Text>
 		<Address>101 201 301</Address>
 	</Node>
