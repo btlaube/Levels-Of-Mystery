@@ -3,7 +3,7 @@
     starting point
     <Address>100</Address>
   </Node>
-  <Node ID="100" Char="Caroline">
+  <Node ID="100" Char="Caroline" NPC1="Caroline" NPC2="">
     <Text>M-morning. F-f-first floor.</Text>
     <Address>101</Address>
   </Node>
