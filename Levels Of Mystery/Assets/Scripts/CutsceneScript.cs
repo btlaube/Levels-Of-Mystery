@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class CutsceneScript : MonoBehaviour
 {
-
+    public Animator animator;
     public Text textElement;
     private bool fullText = false;
     private int index = 0;
+    public Player player;
 
     public string[] texts = {"The year is 1920, and a particularly harsh winter has hit the city of New York in the United States."
                         + "\nSteven Devlin, a retired police officer, had recently taken a job at the opulent Countryshire Apartments as an elevator operator."
@@ -18,6 +19,9 @@ public class CutsceneScript : MonoBehaviour
                         "test"};
 
     public void Start() {
+        //if (player.day == 1 && player.time == 1){
+        //    ShowText();
+        //}
         ShowText();
     }
 
@@ -53,7 +57,7 @@ public class CutsceneScript : MonoBehaviour
     }
 
     public void HideSelf() {
-        gameObject.SetActive(false);
+        animator.SetTrigger("FadeOut");
         index++;
     }
 }
