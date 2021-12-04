@@ -1,0 +1,70 @@
+﻿<Root>
+	<Node ID="0">
+		<Address>100</Address>
+	</Node>
+	<Node ID="100" Char="Steve">
+		<Text>Well good evening, Ms.Virginia</Text>
+		<Address>201 202</Address>
+	</Node>
+	<Node ID="201" Char="Virginia">
+		<Text>Is that a fact. Another death and you believe it was a good evening?</Text>
+		<Address>301 302</Address>
+	</Node>
+	<Node ID="301" Char="Steve">
+		<Text>Well something you have to look on the brightside of thing.</Text>
+		<Address>401</Address>
+	</Node>
+	<Node ID="302" Char="Steve">
+		<Text>Only if you look on the negative side of thing.</Text>
+		<Reputation>-1</Reputation>
+		<Address>401</Address>
+	</Node>
+	<Node ID="401" Char="Virginia">
+		<Text>What ever helps you sleep better at night now take me to floor 3. 
+		Please let us mourn that pathetic grounds keeper, oh what was his name?</Text>
+	</Node>
+	<Node ID="202" Char="Virginia">
+		<Threshold>3</Threshold>
+		<Text>If you say so commoner. Even though it's another dark days in this inn.</Text>
+		<Address>303 304</Address>
+	</Node>
+	<Node ID="303" Char="Steve">
+		<Text>That is the Mr.Charles dying that way must have been painful.</Text>
+		<Address>402</Address>
+	</Node>
+	<Node ID="402" Char="Virginia">
+		<Text>Yes, death by snake bite sure does not kill fast or painless.</Text>
+		<Address>501</Address>
+	</Node>
+	<Node ID="501" Char="Steve">
+		<Text>That's funny I wasn't aware that the police made the cause of death known to outside the force.</Text>
+		<Address>601</Address>
+		<Reputation>-3</Reputation>
+	</Node>
+	<Node ID="601" Char="Virginia">
+		<Text>Well, you know sercets are not something well kept. But how did you know the cause of death?</Text>
+		<Address>701 702</Address>
+	</Node>
+	<Node ID="701" Char="Steve">
+		<Text>I have some friends on the police force who sometimes keep me updated.</Text>
+		<Reputation>-3</Reputation>
+	</Node>
+	<Node ID="702" Char="Steve">
+		<Text>Same as you I suppose.</Text>
+	</Node>
+	<Node ID="304" Char="Steve">
+		<Text>This hotel is having some dark days. You wouldn't happen to know anything about</Text>
+		<Address>403</Address>
+	</Node>
+	<Node ID="403" Char="Virginia">
+		<Text>Have you heard anything about it?</Text>
+		<Address>502 503</Address>
+	</Node>
+	<Node ID="502" Char="Virginia">
+		<Text>Just that the poor man died in the garden he kept. Foolish man.</Text>
+		<Address>602</Address>
+	</Node>
+	<Node ID="602" Char="Steve">
+		<Text>You be safe out there, Ms. Virginia.</Text>
+	</Node>
+</Root>
