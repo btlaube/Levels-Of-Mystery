@@ -25,6 +25,11 @@ public class Player : MonoBehaviour
 
     #region UI Methods
 
+    public void ResetPlayer() {
+        this.day = 1;
+        this.time = 1;
+    }
+
     public void AddHint(string character, string hint) {
         this.hints[character].Add(hint);
     }
@@ -32,9 +37,6 @@ public class Player : MonoBehaviour
     public void UpdateDay() {
         day++;
         GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
-        if ((day == 6 && time == 1) || (day == 11 && time == 1) || (day == 15 && time == 1)) {
-            GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().Cutscene();
-        }
     }
 
     public void UpdateTime() {
