@@ -310,14 +310,14 @@ RectTransform:
   m_GameObject: {fileID: 661227488761672436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3999999, y: 2.3999999, z: 2.3999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 326912897753217129}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278.40015, y: -310}
+  m_AnchoredPosition: {x: 113, y: -131}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6195248056063648337
@@ -2042,7 +2042,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 7, y: -4}
-  m_SizeDelta: {x: 386.6248, y: 233.3478}
+  m_SizeDelta: {x: 377.0872, y: 227.5914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8230841064223142571
 CanvasRenderer:
@@ -2512,7 +2512,7 @@ RectTransform:
   m_GameObject: {fileID: 4938797068439992042}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3999999, y: 2.3999999, z: 2.3999999}
+  m_LocalScale: {x: 1, y: 1, z: 2.3999999}
   m_Children:
   - {fileID: 1493035190232686987}
   m_Father: {fileID: 326912897753217129}
@@ -2521,7 +2521,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 363.0704, y: 493.2878}
+  m_SizeDelta: {x: 360.2803, y: 489.4972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9180453764203561838
 CanvasRenderer:
@@ -3396,7 +3396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5407228275318063436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3450,7 +3450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3490,7 +3490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625bee7e08afd894e9fd4749f43752a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8587424660452321714}
   textElement: {fileID: 2109194077272854668}
+  player: {fileID: 0}
   texts:
   - "The year is 1920, and a particularly harsh winter has hit the city of New York
     in the United States.\nSteven Devlin, a retired police officer, had recently
@@ -3512,7 +3514,7 @@ Animator:
   m_GameObject: {fileID: 6285802151800646640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 50b3d7d811636484289c1bbc907179fb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ac6fa819a0a5b84f8c5a2579231e36b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
