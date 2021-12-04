@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
     public void UpdateDay() {
         day++;
         GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().EndOfDay();
+        if (day == 6) {
+            GameObject.Find("CanvasGroup").GetComponent<CanvasGroupScript>().Cutscene();
+        }
     }
 
     public void UpdateTime() {

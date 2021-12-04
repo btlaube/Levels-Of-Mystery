@@ -65,4 +65,9 @@ public class CanvasGroupScript : MonoBehaviour
     public void GameSaved() {
         transform.GetChild(6).gameObject.SetActive(true);
     }
+
+    public void Cutscene() {
+        transform.GetChild(7).gameObject.SetActive(true);
+    }
+
 }
