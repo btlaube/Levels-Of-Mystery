@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Xml;
 using System.Xml.XPath;
+using System;
+using System.IO;
 
 
 public class NotebookControl : MonoBehaviour
 {
-    
+    public Image NotebookImage;
+
     private int i = 0;
+
+    public Player player;
+
+    public Text Description;
 
     public XmlDocument personDataXml;
 
@@ -21,8 +28,7 @@ public class NotebookControl : MonoBehaviour
     public void ButtonNext()
     {
         Text Hint1 = GameObject.Find("NotebookCanvas/Text Field 1").GetComponent<Text>();
-        Hint1.text = "hinttest1";
-        if (i != 7)
+        if (i != 6)
         {
             i = i + 1;
             ReloadPage();
@@ -38,60 +44,116 @@ public class NotebookControl : MonoBehaviour
     }
     public void CharacterName()
     {
-        
+
         if (i == 0)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "Caroline";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Caroline");
+
+            int a = 0;
+            foreach (string hint in player.hints["Caroline"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 1)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "The Heiress";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Virginia");
+
+            int a = 0;
+            foreach (string hint in player.hints["Virginia"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 2)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "James";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\James");
+
+            int a = 0;
+            foreach (string hint in player.hints["James"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 3)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "Charles";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Charles");
+
+            int a = 0;
+            foreach (string hint in player.hints["Charles"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 4)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "The Failson";
+            CharacterName.text = "Yellow Journalist";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\AlexTemp");
+
+            int a = 0;
+            foreach (string hint in player.hints["Alex"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 5)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "Yellow Journalist";
+            CharacterName.text = "War Bride";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Lucy");
+
+            int a = 0;
+            foreach (string hint in player.hints["lucy"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
         if (i == 6)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
-            CharacterName.text = "War Bride";
-        }
-        if (i == 7)
-        {
-            Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
             CharacterName.text = "Thomas";
+
+            NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\BillMurray");
+
+            int a = 0;
+            foreach (string hint in player.hints["Thomas"])
+            {
+                Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                HintSpot.text = hint;
+                a++;
+            }
         }
 
-     
-    }
-    
-    /*
-    public void Awake()
-    {
-        TextAsset xmlTextAsset = Resources.Load<TextAsset>("XML/Discriptions");
 
-        personDataXml = new XmlDocument();
-        personDataXml.LoadXml(xmlTextAsset.text);
     }
-    */
+
     public void DiscriptionField()
     {
         XPathNavigator nav;
@@ -99,7 +161,7 @@ public class NotebookControl : MonoBehaviour
         XPathNodeIterator NodeIter;
         string strExpression;
         string path = "Assets\\Resources\\Discriptions.xml.txt";
-        
+
         docNav = new XPathDocument(path);
         nav = docNav.CreateNavigator();
 
@@ -110,55 +172,17 @@ public class NotebookControl : MonoBehaviour
         List<string> peopleArray = new List<string>();
 
         while (NodeIter.MoveNext())
-         {
+        {
             peopleArray.Add(NodeIter.Current.Value);
-         };
+        };
 
-        Text Description = GameObject.Find("NotebookCanvas/Description Text").GetComponent<Text>();
         Description.text = NodeIter.Current.Value;
-    }
-    public void LoadHint1()
-    {
-
-        Text Hint1 = GameObject.Find("NotebookCanvas/Text Field 1").GetComponent<Text>();
-        Hint1.text = "hinttest1";
-    }
-    public void LoadHint2()
-    {
-
-        Text Hint2 = GameObject.Find("NotebookCanvas/Text Field 2").GetComponent<Text>();
-        Hint2.text = "hinttest2";
-    }
-    public void LoadHint3()
-    {
-
-        Text Hint3 = GameObject.Find("NotebookCanvas/Text Field 3").GetComponent<Text>();
-        Hint3.text = "hinttest3";
-    }
-    public void LoadHint4()
-    {
-
-        Text Hint4 = GameObject.Find("NotebookCanvas/Text Field 4").GetComponent<Text>();
-        Hint4.text = i.ToString();
-    }
-    public void UpdateImage()
-    {
-     //   Image CharacterHead = GameObject.Find("Canvas/Character Picture").GetComponent<Image>().sprite1;
-     //   CharacterHead = "Assets\\Textures\\pepe.png";
     }
     public void ReloadPage()
     {
         CharacterName();
         DiscriptionField();
-        LoadHint1();
-        LoadHint2();
-        LoadHint3();
-        LoadHint4();
     }
 
-    public void LoadXmlTree()
-    {
-        
-    }
 
 }
