@@ -21,6 +21,10 @@ public class NotebookControl : MonoBehaviour
 
     public XmlDocument personDataXml;
 
+    public void LoadNotebook()
+    {
+        ReloadPage();
+    }
     public void ButtonExit()
     {
         SceneManager.LoadScene(1);
@@ -69,7 +73,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Virginia");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Virginia"])
@@ -87,7 +91,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\James");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["James"])
@@ -105,7 +109,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Charles");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Charles"])
@@ -123,7 +127,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\AlexTemp");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Alex"])
@@ -141,7 +145,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Lucy");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["lucy"])
@@ -159,7 +163,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\BillMurray");
 
-            if (player.hints["Caroline"] != null)
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Thomas"])
