@@ -21,6 +21,10 @@ public class NotebookControl : MonoBehaviour
 
     public XmlDocument personDataXml;
 
+    public void LoadNotebook()
+    {
+        ReloadPage();
+    }
     public void ButtonExit()
     {
         SceneManager.LoadScene(1);
@@ -50,7 +54,7 @@ public class NotebookControl : MonoBehaviour
             CharacterName.text = "Caroline";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Caroline");
-            if(player.hints["Caroline"] != null)
+           /* if(player.hints["Caroline"] != null)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Caroline"])
@@ -59,7 +63,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
           
         }
         if (i == 1)
@@ -68,8 +72,8 @@ public class NotebookControl : MonoBehaviour
             CharacterName.text = "Virginia";
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Virginia");
-
-            if (player.hints["Caroline"] != null)
+/*
+            if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Virginia"])
@@ -78,7 +82,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
         if (i == 2)
         {
@@ -87,7 +91,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\James");
 
-            if (player.hints["Caroline"] != null)
+         /*   if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["James"])
@@ -96,7 +100,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
         if (i == 3)
         {
@@ -105,7 +109,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Charles");
 
-            if (player.hints["Caroline"] != null)
+          /*  if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Charles"])
@@ -114,7 +118,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
         if (i == 4)
         {
@@ -123,7 +127,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\AlexTemp");
 
-            if (player.hints["Caroline"] != null)
+           /* if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Alex"])
@@ -132,7 +136,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
         if (i == 5)
         {
@@ -141,7 +145,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\Lucy");
 
-            if (player.hints["Caroline"] != null)
+         /*   if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["lucy"])
@@ -150,7 +154,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
         if (i == 6)
         {
@@ -159,7 +163,7 @@ public class NotebookControl : MonoBehaviour
 
             NotebookImage.sprite = Resources.Load<Sprite>("CharacterSprites\\BillMurray");
 
-            if (player.hints["Caroline"] != null)
+           /* if (player.hints["Caroline"] == 17)
             {
                 int a = 0;
                 foreach (string hint in player.hints["Thomas"])
@@ -168,7 +172,7 @@ public class NotebookControl : MonoBehaviour
                     HintSpot.text = hint;
                     a++;
                 }
-            }
+            }*/
         }
 
 
