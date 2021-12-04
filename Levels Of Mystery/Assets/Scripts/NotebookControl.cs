@@ -59,7 +59,7 @@ public class NotebookControl : MonoBehaviour
                 int a = 0;
                 foreach (string hint in player.hints["Caroline"])
                 {
-                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field " + a + "").GetComponent<Text>();
+                    Text HintSpot = GameObject.Find("NotebookCanvas/Text Field "+a+"").GetComponent<Text>();
                     HintSpot.text = hint;
                     a++;
                 }
