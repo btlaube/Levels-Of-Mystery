@@ -97,6 +97,9 @@ public class Dialogue
             case "Alex":
                 CharacterPNGPath = "CharacterSprites\\AlexTemp";
                 break;
+            case "Stranger":
+                CharacterPNGPath = "CharacterSprites\\Stranger";
+                break;
             default:
                 Debug.Log("No character. Found Speaking.");
                 break;

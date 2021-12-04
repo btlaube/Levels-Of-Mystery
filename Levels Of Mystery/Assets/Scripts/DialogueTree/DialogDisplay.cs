@@ -16,8 +16,7 @@ public class DialogDisplay : MonoBehaviour
     public string Path = "";
 
     public Player player;
-    //public SpriteRenderer npc;
-    public Image image; 
+    public Image image;
 
     void Start()
     {
