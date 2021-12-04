@@ -11,7 +11,7 @@
     <Text>Yes, something like that.</Text>
     <Address>102</Address>
   </Node>
-  <Node ID="103" Char="Stranger">
+  <Node ID="102" Char="Stranger">
     <Text>Sorry to hear that. But don't worry about it too much; from what I hear, this place offers a great salary! You'll get along just fine.</Text>
     <Address>104</Address>
   </Node>
@@ -26,8 +26,5 @@
   <Node ID="106" Char="Stranger">
     <Text>Thanks for the ride, sir. Have a good evening.</Text>
     <Address>107</Address>
-  </Node>
-  <Node ID="107" Char="Steve">
-    <Text>And you as well.</Text>
   </Node>
 </Root>
