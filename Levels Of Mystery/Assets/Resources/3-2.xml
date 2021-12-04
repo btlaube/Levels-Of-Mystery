@@ -13,7 +13,7 @@
   </Node>
   <Node ID="102" Char="Steve">
     <Text>You seem to be in a good mood today. Is there good news?</Text>
-    <Address>103 104</Address>
+    <Address>104</Address>
   </Node>
   <Node ID="103" Char="Alex">
     <Text>Let's just say that this story I'm working on won't be so awful after all.</Text>

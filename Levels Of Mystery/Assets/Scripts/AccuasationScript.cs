@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class AccuasationScript : MonoBehaviour
 {
-    public int numAccuasations = 3;
+    public Player player;
+    public int numAccuasations;
     public Text accuasationText;
     public GameObject virginiaButton;
     public GameObject alexButton;
@@ -20,15 +21,20 @@ public class AccuasationScript : MonoBehaviour
     public GameObject lucyX;
     public GameObject thomasX;
 
+    public GameObject win;
+    public GameObject lose;
+
     void Start() {
+        numAccuasations = player.GetNumAccuasations();
         accuasationText.text = "Accuasations Left: " + numAccuasations.ToString() + "/3";
     }
 
     public void Accuse(string accused) {
         numAccuasations--;
+        player.Accuse();
         accuasationText.text = "Accuasations Left: " + numAccuasations.ToString() + "/3";
         if (accused == "Virginia") {
-            //win
+            win.SetActive(true);
         }
         else if (accused == "Alex"){
             alexX.SetActive(true);
@@ -54,7 +60,7 @@ public class AccuasationScript : MonoBehaviour
 
     void Update() {
         if (numAccuasations == 0) {
-            //lose
+            lose.SetActive(true);
         }
     }
 
