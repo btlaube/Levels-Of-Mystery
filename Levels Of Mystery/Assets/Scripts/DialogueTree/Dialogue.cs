@@ -12,19 +12,25 @@ public class Dialogue
     public XmlNode CurrentNode;
     public string Character = "None";
     public string CharacterPNGPath = "None";
-
-    public Player player;
+    public Player player; 
 
     public void LoadDialogue(string path)
     {
-        //Debug.Log($"Loading File: {path}");
-        if (File.Exists(path))
+        while (true)
         {
-            //Debug.Log($"File: {path} existed");
-            Doc.Load(path);
-            CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
+            if (File.Exists(path))
+            {
+                Debug.Log($"path exists: {path}");
+                Doc.Load(path);
+                CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
+                break;
+            }
+            else { 
+                Debug.Log($"File: {path} was not found"); 
+                player.UpdateTime(); //hacky but quick solution
+            }
+            
         }
-        else { Debug.Log($"File: {path} was not found"); }
     }
 
     public void changeCurrentNode(string id)
