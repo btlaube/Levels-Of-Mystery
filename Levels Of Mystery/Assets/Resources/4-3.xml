@@ -50,7 +50,7 @@
     <Reputation>+1</Reputation>
     <Address>201 301 600</Address>
   </Node>
-  <Node ID="201" Char="Steve" ShowOnce=True>
+  <Node ID="201" Char="Steve" ShowOnce="True">
     <Text>What are your thoughts on Alex?</Text>
     <Address>202</Address>
   </Node>

@@ -24,6 +24,7 @@ public class Dialogue
                 Debug.Log($"path exists: {path}");
                 Doc.Load(path);
                 CurrentNode = Doc.FirstChild.FirstChild; //first element after the root.
+                //updateCharacter(CurrentNode);
                 break;
             }
             else { 
@@ -58,28 +59,44 @@ public class Dialogue
     private void updateCharacter(XmlNode node)
     {
 
-        NPC1PNGPath = "CharacterSprites\\" + node.Attributes["NPC1"].Value;
-        if (node.Attributes["NPC2"].Value == "") {
-            NPC2PNGPath = "CharacterSprites\\Transparent";
-        }
-        else {
-            NPC2PNGPath = "CharacterSprites\\" + node.Attributes["NPC2"].Value;
-        }        
-
-        //if (node != null) {
-        //    Debug.Log("node is not null");
+        //Character = node.Attributes["Char"].Value;
+        //NPC1PNGPath = "CharacterSprites\\" + node["NPC1"].InnerText;
+        //if (node["NPC2"].InnerText == "") {
+        //    NPC2PNGPath = "CharacterSprites\\Transparent";
         //}
         //else {
-        //    Debug.Log("node is null");
-        //}
-        //try
-        //{
-        //    if (Character == node.Attributes["Char"].Value) { return; }
-        //    Character = node.Attributes["Char"].Value;
-        //    //temp = Character;
-        //}
-        //catch (NullReferenceException) { Debug.Log("character not found"); }
-        //
+        //    NPC2PNGPath = "CharacterSprites\\" + node["NPC2"].InnerText;
+        //}        
+
+        if (node != null) {
+            Debug.Log("node is not null");
+        }
+        else {
+            Debug.Log("node is null");
+        }
+        try
+        {
+            if (Character == node.Attributes["Char"].Value) { return; }
+            Character = node.Attributes["Char"].Value;
+            //temp = Character;
+        }
+        catch (NullReferenceException) { Debug.Log("character not found"); }
+        
+        Debug.Log("hello" + node.Attributes["ID"].Value);
+        if (node.Attributes["ID"].Value == "100"){
+            NPC1PNGPath = "CharacterSprites\\" + node.Attributes["NPC1"].Value;
+            if (node.Attributes["NPC2"].Value == "") {
+                NPC2PNGPath = "CharacterSprites\\Transparent";
+            }
+            else {
+                NPC2PNGPath = "CharacterSprites\\" + node.Attributes["NPC2"].Value;
+            }  
+        }
+        
+
+        //Debug.Log("npc1:");
+        //Debug.Log("CharacterSprites\\" + node["NPC1"].InnerText);
+
         //switch (Character)
         //{
         //    case "Player Character":
@@ -123,6 +140,12 @@ public class Dialogue
             foreach (string address in CurrentNode["Address"].InnerText.Split())
             {
                 XmlNode next = Doc.SelectSingleNode($"Root/Node[@ID='{address}']/Text");
+                Debug.Log(CurrentNode.Attributes["ID"].Value);
+                //if (CurrentNode.Attributes["ID"].Value == "0") {
+                //    Debug.Log("update character");
+                //    Debug.Log(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
+                //    //updateCharacter(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
+                //}
                 updateCharacter(Doc.SelectSingleNode($"Root/Node[@ID='{address}']"));
                 options.Add(address, next.InnerText);
             }

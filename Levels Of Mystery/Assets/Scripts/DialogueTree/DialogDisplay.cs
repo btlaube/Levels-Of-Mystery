@@ -28,10 +28,10 @@ public class DialogDisplay : MonoBehaviour
 
     public void getPath()
     {
-        if (player.day == 10) //arbitrary
-        {
-            Tree = null; //will cause error, only for testing
-        }
+        //if (player.day == 10) //arbitrary
+        //{
+        //    Tree = null; //will cause error, only for testing
+        //}
         Path = $"Assets\\Resources\\{player.day}-{player.time}.xml"; //EX: "Assets\\Resources\\1-2.xml"
         //Debug.Log(Path);
         Tree.LoadDialogue(Path);
