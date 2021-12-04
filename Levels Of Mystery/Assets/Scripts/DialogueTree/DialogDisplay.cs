@@ -49,10 +49,12 @@ public class DialogDisplay : MonoBehaviour
         ChoiceCount = Choices.Count;
         textElement.text = "";
         nameTag.text = Tree.Character;
-        if (Tree.Character == "Steve") {
+        if (Tree.Character == "Steve")
+        {
             control.text = "Number Keys";
         }
-        else {
+        else
+        {
             control.text = "↓ Enter";
         }
         //npc.sprite = Resources.Load<Sprite>(Tree.CharacterPNGPath);//path of image
@@ -82,10 +84,12 @@ public class DialogDisplay : MonoBehaviour
         }
     }
 
-    IEnumerator TypeDialogue(string dialogue) {
+    IEnumerator TypeDialogue(string dialogue)
+    {
         GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Dialogue");
         textElement.text = "";
-        foreach (char letter in dialogue.ToCharArray()) {
+        foreach (char letter in dialogue.ToCharArray())
+        {
             textElement.text += letter;
             yield return new WaitForSeconds(0.01f);
         }
