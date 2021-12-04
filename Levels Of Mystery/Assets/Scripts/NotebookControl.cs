@@ -27,7 +27,6 @@ public class NotebookControl : MonoBehaviour
     }
     public void ButtonNext()
     {
-        Text Hint1 = GameObject.Find("NotebookCanvas/Text Field 1").GetComponent<Text>();
         if (i != 6)
         {
             i = i + 1;
@@ -44,7 +43,7 @@ public class NotebookControl : MonoBehaviour
     }
     public void CharacterName()
     {
-
+        DiscriptionField();
         if (i == 0)
         {
             Text CharacterName = GameObject.Find("NotebookCanvas/Character Name").GetComponent<Text>();
@@ -201,8 +200,8 @@ public class NotebookControl : MonoBehaviour
     }
     public void ReloadPage()
     {
-        CharacterName();
         DiscriptionField();
+        CharacterName();
     }
 
 
